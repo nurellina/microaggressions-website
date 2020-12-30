@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("./ObjectSans-Regular.otf");
+}
+
+@font-face {
+  font-family: "Monument Extended Regular";
+  src: url("./MonumentExtended-Regular.otf");
+}
+
+@font-face {
+  font-family: "Open Sans Heavy";
+  src: url("./ObjectSans-Heavy.otf");
+}
