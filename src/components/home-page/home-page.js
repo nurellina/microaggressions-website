@@ -1,4 +1,5 @@
 import React from "react"
+import CreatePhrase from "../create-phrase"
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -208,6 +209,7 @@ class HomePage extends React.Component {
               {" "}
               Wait, has this ever happened to you as well?
             </h1>
+            <CreatePhrase />
           </div>
         </section>
         <article class="bg-dark">
