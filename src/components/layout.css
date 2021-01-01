@@ -77,6 +77,9 @@ section {
 .margin-bottom {
   margin-bottom: 0.9em;
 }
+.margin-top {
+  margin-top: 4em;
+}
 
 .feel-you {
   margin-top: 4rem;
@@ -192,12 +195,12 @@ section {
 .greenLeftImg {
   position: absolute;
   width: 40%;
-  top: 70%;
+  top: 60%;
   left: 0%;
   z-index: -1;
 }
 
-.redBgShare {
+.redBgShape {
   position: absolute;
   width: 100%;
   top: 0%;
@@ -207,7 +210,7 @@ section {
 
 @media (min-width: 50rem) {
   .diff-par-position {
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-left: 30rem;
   }
 }

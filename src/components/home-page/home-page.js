@@ -1,4 +1,9 @@
 import React from "react"
+import CreatePhrase from "../create-phrase"
+import orangeRightHeader from "../../images/redBgShape.svg"
+import redBgShape from "../../images/redBgShape.svg"
+import greenLeftDiff from "../../images/greenLeftDiff.svg"
+import greenRightDiff from "../../images/greenRightDiff.svg"
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -123,12 +128,12 @@ class HomePage extends React.Component {
         <article>
           <div class="container difference">
             <img
-              src="images/greenRightDIff.svg"
+              src={greenRightDiff}
               class="greenRightImg"
               alt="Green Shad on the right"
             />
             <img
-              src="images/greenLeftDIff.svg"
+              src={greenLeftDiff}
               class="greenLeftImg"
               alt="Green Shad on the left"
             />
@@ -200,14 +205,15 @@ class HomePage extends React.Component {
         <section>
           <div class="container">
             <img
-              src="images/redBgShare.svg"
-              class="redBgShare"
+              src={redBgShape}
+              class="redBgShape"
               alt="Red shad as a background"
             />
-            <h1 class="clr-black">
+            <h1 class="clr-black margin-top">
               {" "}
               Wait, has this ever happened to you as well?
             </h1>
+            <CreatePhrase />
           </div>
         </section>
         <article class="bg-dark">

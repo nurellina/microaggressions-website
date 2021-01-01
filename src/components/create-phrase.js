@@ -1,32 +1,8 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import firebase from "gatsby-plugin-firebase"
+import "./layout.css"
 
-//styles components
-const AddPhraseDiv = styled.div`
-  display: flex;
-  width: 60%;
-  flex-direction: column;
-  margin: 30px auto;
-  padding: 5px;
-`
-
-const InputBody = styled.input`
-  padding: 0.5em;
-  border: none;
-  background: #f4f4;
-  margin-bottom: 10px;
-  border-radius: 3px;
-`
-
-const Button = styled.div`
-  background: blue;
-  color: white;
-  font-size: 1em;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 3px;
-`
 const CreatePhrase = () => {
   //store value in react state using useState Hooks
   const [phrase, setPhrase] = useState("")
@@ -43,10 +19,14 @@ const CreatePhrase = () => {
     setPhrase(e.target.value)
   }
   return (
-    <AddPhraseDiv>
-      <InputBody name="phrase" value={phrase} onChange={handleChange} />
-      <Button onClick={addPhrase}>Send</Button>
-    </AddPhraseDiv>
+    <div class="input-group">
+      <input
+        name="phrase"
+        placeholder="Type it here..."
+        value={phrase}
+        onChange={handleChange}
+      />
+    </div>
   )
 }
 
