@@ -1,6 +1,7 @@
 import React from "react"
 import CreatePhrase from "../create-phrase"
 import redBgShape from "../../images/redBgShape.svg"
+import orangeRightHeader from "../../images/orangeRightHeader.svg"
 import greenLeftDiff from "../../images/greenLeftDiff.svg"
 import greenRightDiff from "../../images/greenRightDiff.svg"
 
