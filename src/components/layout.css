@@ -59,7 +59,7 @@ img {
 article,
 section {
   width: 100vw;
-  display: inline-block;
+  display: block;
   padding: 1.5em 0;
   position: relative;
 }
@@ -70,7 +70,7 @@ section {
   }
 }
 .container {
-  margin-inline: auto;
+  margin: 0 auto;
   /* margin sides: for mobile takes 90% of the screen, for desktop is wider 80.5rem */
   width: min(85%, 80.5rem);
 }
