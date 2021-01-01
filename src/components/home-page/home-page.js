@@ -1,6 +1,6 @@
 import React from "react"
 import CreatePhrase from "../create-phrase"
-import redBgShape from "../../images/redBgShape"
+import redBgShape from "../../images/redBgShape.svg"
 
 class HomePage extends React.Component {
   constructor(props) {
