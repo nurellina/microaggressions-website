@@ -2,6 +2,7 @@ import React from "react"
 import CreatePhrase from "../create-phrase"
 import redBgShape from "../../images/redBgShape.svg"
 import greenLeft from "../../images/greenLeft.svg"
+import greenRightDiff from "../..images/greenRightDiff.svg"
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -125,11 +126,11 @@ class HomePage extends React.Component {
 
         <article>
           <div class="container difference">
-            {/* <img
+            <img
               src={greenRightDiff}
               class="greenRightDiff"
               alt="Green Shad on the right"
-            /> */}
+            />
             <img
               src={greenLeft}
               class="greenLeftDiff"
