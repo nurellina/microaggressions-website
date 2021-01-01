@@ -3,7 +3,7 @@ import CreatePhrase from "../create-phrase"
 import redBgShape from "../../images/redBgShape.svg"
 import orangeRightHeader from "../../images/orangeRightHeader.svg"
 import greenLeftDiff from "../../images/greenLeftDiff.svg"
-import greenRightDiff from "../../images/rgreenRightDiff.svg"
+import greenRightDiff from "../../images/greenRightDiff.svg"
 
 class HomePage extends React.Component {
   constructor(props) {
