@@ -2,7 +2,7 @@ import React from "react"
 import CreatePhrase from "../create-phrase"
 import redBgShape from "../../images/redBgShape.svg"
 import greenLeft from "../../images/greenLeft.svg"
-import greenRight from "../..images/greenRight.svg"
+import greenRight from "../../images/greenRight.svg"
 
 class HomePage extends React.Component {
   constructor(props) {
