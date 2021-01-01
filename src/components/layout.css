@@ -182,14 +182,14 @@ section {
     grid-row-end: 5;
   }
 }
-.greenRightImg {
+.greenRightDiff {
   position: absolute;
   width: 40%;
   top: 30%;
   right: 0%;
   z-index: -1;
 }
-.greenLeftImg {
+.greenLeftDiff {
   position: absolute;
   width: 40%;
   top: 70%;
