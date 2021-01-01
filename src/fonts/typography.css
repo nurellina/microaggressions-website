@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Object Sans";
+  src: url("../fonts/ObjectSans/ObjectSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Monument Extended";
+  src: url("../fonts/MonumentExtended/MonumentExtended-Regular.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Monument Extended Black";
+  src: url("../fonts/MonumentExtended/MonumentExtended-Black.woff")
+    format("woff");
+  font-weight: 800;
+}
