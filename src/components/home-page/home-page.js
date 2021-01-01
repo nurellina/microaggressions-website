@@ -1,5 +1,6 @@
 import React from "react"
 import CreatePhrase from "../create-phrase"
+import redBgShape from "../../images/redBgShape"
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -201,8 +202,8 @@ class HomePage extends React.Component {
         <section>
           <div class="container">
             <img
-              src="images/redBgShare.svg"
-              class="redBgShare"
+              src={redBgShape}
+              class="redBgShape"
               alt="Red shad as a background"
             />
             <h1 class="clr-black">
