@@ -7,10 +7,7 @@ const GlossaryPage = () => (
   <Layout>
     <SEO title="Glossary" />
     <body>
-      <section>
-        {" "}
-        <h1 class="veryBig">Here goes your code</h1>
-      </section>
+      <section>{/* here goes your code */}</section>
     </body>
   </Layout>
 )

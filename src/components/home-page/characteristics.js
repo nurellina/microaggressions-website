@@ -7,8 +7,8 @@ const Characteristics = () => {
   return (
     <div>
       <article>
-        <div class="container">
-          <h1 class="clr-salmon">
+        <div className="container">
+          <h1 className="clr-salmon">
             {" "}
             Common characteristics of Microaggressions{" "}
           </h1>

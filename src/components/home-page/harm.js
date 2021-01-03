@@ -5,12 +5,12 @@ import "../../styles/homePageStyles/harm-styles.css"
 const Harm = () => {
   return (
     <div>
-      <article class="bg-dark">
-        <div class="container">
+      <article className="bg-dark">
+        <div className="container">
           <h1> What harms do Microaggressions cause? </h1>
-          <div class="split">
-            <div class="column">
-              <p class="clr-white">
+          <div className="split">
+            <div className="column">
+              <p className="clr-white">
                 {" "}
                 “We do find the current climate in which it is hard to talk
                 about sensitive issues problematic. We do want to find a way to
@@ -22,7 +22,7 @@ const Harm = () => {
                 in the moment and cumulatively.”
               </p>
             </div>
-            <div class="column">
+            <div className="column">
               <p>
                 {" "}
                 Most of the time, such microinvalidations and aggressions are

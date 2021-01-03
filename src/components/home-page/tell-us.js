@@ -7,13 +7,13 @@ const TellUs = () => {
   return (
     <div>
       <section>
-        <div class="container">
+        <div className="container">
           <img
             src={redBgShape}
-            class="redBgShape"
+            className="redBgShape"
             alt="Red shad as a background"
           />
-          <h1 class="clr-black">
+          <h1 className="clr-black">
             {" "}
             Wait, has this ever happened to you as well?
           </h1>

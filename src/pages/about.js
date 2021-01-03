@@ -7,7 +7,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About the project" />
     <body>
-      <section> Here goes your code</section>
+      <section>{/* Here goes your code */}</section>
     </body>
   </Layout>
 )

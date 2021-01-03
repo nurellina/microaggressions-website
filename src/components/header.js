@@ -6,8 +6,8 @@ import "./layout.css"
 const Header = ({ siteTitle }) => (
   <header>
     <nav>
-      <div class="container">
-        <div class="logo">
+      <div className="container">
+        <div className="logo">
           <h2>
             {" "}
             <Link className="clr-orange no-decor-link" to="/">
@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
             </Link>
           </h2>
         </div>
-        <div class="menu">
+        <div className="menu">
           <button>
             <span></span>
             <span></span>

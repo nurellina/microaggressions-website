@@ -7,15 +7,15 @@ const Difference = () => {
   return (
     <div>
       <article>
-        <div class="container difference">
+        <div className="container difference">
           <img
             src={greenRight}
-            class="greenRightDiff"
+            className="greenRightDiff"
             alt="Green Shad on the right"
           />
           <img
             src={greenLeft}
-            class="greenLeftDiff"
+            className="greenLeftDiff"
             alt="Green Shad on the left"
           />
           <h1>
@@ -36,13 +36,13 @@ const Difference = () => {
               happen:
             </p>
           </p>
-          <div class="grid">
-            <span class="word1"> casually </span>
-            <span class="word2"> frequently</span>
-            <span class="word3"> without any harm intended </span>
-            <span class="word4"> in everyday life </span>
+          <div className="grid">
+            <span className="word1"> casually </span>
+            <span className="word2"> frequently</span>
+            <span className="word3"> without any harm intended </span>
+            <span className="word4"> in everyday life </span>
           </div>
-          <p class="diff-par-position">
+          <p className="diff-par-position">
             {" "}
             Oftentimes, people don't even realize that they're doing those sorts
             of things.

@@ -7,7 +7,7 @@ const MorePage = () => (
   <Layout>
     <SEO title="Learn more about microagressions" />
     <body>
-      <section> Here goes your code</section>
+      <section>{/* Here goes your code */}</section>
     </body>
   </Layout>
 )

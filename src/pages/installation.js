@@ -7,7 +7,7 @@ const InstallationPage = () => (
   <Layout>
     <SEO title="Information about installation" />
     <body>
-      <section> Here goes your code</section>
+      <section>{/* Here goes your code */}</section>
     </body>
   </Layout>
 )

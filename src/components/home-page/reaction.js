@@ -4,7 +4,17 @@ import React from "react"
 import "../../styles/homePageStyles/reaction-styles.css"
 
 const Reaction = () => {
-  return <div></div>
+  return (
+    <div>
+      {" "}
+      <article>
+        <div className="container">
+          <h1>How can people who are affected by microagressions react?</h1>
+          {/* your code here */}
+        </div>
+      </article>
+    </div>
+  )
 }
 
 export default Reaction
