@@ -1,61 +1,29 @@
+/* variables */
 :root {
+  /* color scheme variables */
   --clr-primary-200: #fd3a24;
   --clr-primary-400: #fd0100;
   --clr-neutral-100: #ffffff;
   --clr-neutral-300: #fc9586;
   --clr-neutral-400: #97dc8b;
   --clr-neutral-900: #000000;
-
+  /*fonts variables */
   --ff-primary: "Object Sans", sans-serif;
   --ff-accent: "Monument Extended Black", serif;
   --ff-accent-light: "Monument Extended", serif;
 }
+
+/* global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: var(--ff-primary), Georgia, "Times New Roman", Times, serif;
   letter-spacing: 0.01rem;
   line-height: 1.2;
 }
-h1 {
-  font-family: var(--ff-accent);
-  font-size: 1.3rem;
-  color: var(--clr-primary-400);
-  margin: 1.2em 0;
-}
-p {
-  margin-bottom: 2rem;
-  max-width: 35rem;
-}
-img {
-  display: block;
-  width: 100%;
-}
-.clr-salmon {
-  color: var(--clr-neutral-300);
-}
-.clr-orange {
-  color: var(--clr-primary-200);
-}
-.clr-black {
-  color: var(--clr-neutral-900);
-}
-.bg-dark {
-  background-color: var(--clr-neutral-900);
-  color: var(--clr-neutral-100);
-}
-.ff-accent {
-  font-family: var(--ff-accent);
-}
-.ff-accent-light {
-  font-family: var(--ff-accent-light);
-  letter-spacing: 0rem;
-}
-
 article,
 section {
   width: 100vw;
@@ -69,21 +37,97 @@ section {
     padding: 3em 0;
   }
 }
+/* container with header&paragraph and margins on sides */
 .container {
   margin: 0 auto;
   /* margin sides: for mobile takes 90% of the screen, for desktop is wider 80.5rem */
   width: min(85%, 80.5rem);
 }
+h1 {
+  font-family: var(--ff-accent);
+  font-size: 1.3rem;
+  color: var(--clr-primary-400);
+  margin: 1.2em 0;
+}
+p {
+  margin-bottom: 2rem;
+  max-width: 35rem;
+}
+
+@media (min-width: 70rem) {
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+img {
+  display: block;
+  width: 100%;
+}
+/* global styles: adding color to paragraph, bg or heading */
+.clr-salmon {
+  color: var(--clr-neutral-300);
+}
+.clr-orange {
+  color: var(--clr-primary-200);
+}
+.clr-black {
+  color: var(--clr-neutral-900);
+}
+.bg-dark {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+}
+
+/* global styles: styling text */
+.ff-accent {
+  font-family: var(--ff-accent);
+}
+.ff-accent-light {
+  font-family: var(--ff-accent-light);
+  letter-spacing: 0rem;
+}
+/* global styles: adding margin to the bottom */
 .margin-bottom {
   margin-bottom: 0.9em;
+}
+
+/*  global styles: flexbox with two equal sized columns */
+.split {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 70rem) {
+  .split {
+    flex-direction: row;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+  /* gap between flex columns, *+* selects elements that have divs before them, works for safari */
+  .split > * + * {
+    margin-left: 4em;
+  }
+}
+
+/*  global styles: display element as grid */
+.grid {
+  display: grid;
+}
+
+/* SECTION: header */
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .feel-you {
   margin-top: 4rem;
 }
-.question-to-you {
-  font-size: 1.2rem;
-}
+
 /* .question-to-you::before {
   content: " ";
   background: url(../images/shape.svg);
@@ -96,6 +140,18 @@ section {
   z-index: -1;
 } */
 
+.question-to-you {
+  font-size: 1.2rem;
+}
+@media (min-width: 70rem) {
+  .question-to-you {
+    font-size: 2.2rem;
+  }
+}
+/* SECTION: what are microagression? */
+
+/* SECTION: examples of microagressions? */
+
 .green-container {
   width: 100vw;
   background-color: var(--clr-neutral-400);
@@ -104,41 +160,7 @@ section {
   display: inline-block;
 }
 
-.split {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 70rem) {
-  .split {
-    flex-direction: row;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  p {
-    font-size: 1.2rem;
-  }
-  .question-to-you {
-    font-size: 2.2rem;
-  }
-  .split > * {
-    flex-basis: 100%;
-  }
-  /* gap between flex columns, *+* selects elements that have divs before them, works for safari */
-  .split > * + * {
-    margin-left: 4em;
-  }
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.grid {
-  display: grid;
-}
+/* SECTION: what makes microagression different? */
 
 .difference .grid span {
   color: var(--clr-primary-200);
@@ -154,7 +176,7 @@ section {
     margin-bottom: 2rem;
   }
 
-  .grid span {
+  .difference .grid span {
     font-size: 1.8rem;
   }
   .word1 {
@@ -182,6 +204,7 @@ section {
     grid-row-end: 5;
   }
 }
+
 .greenRightDiff {
   position: absolute;
   width: 40%;
@@ -197,19 +220,23 @@ section {
   z-index: -1;
 }
 
+@media (min-width: 50rem) {
+  .diff-par-position {
+    margin-top: 10rem;
+    margin-left: 30rem;
+  }
+}
+
+/* SECTION: common characteristics? */
+
+/* SECTION: wait, has it ever happend to you? */
+
 .redBgShape {
   position: absolute;
   width: 100%;
   top: 0%;
   left: 0%;
   z-index: -1;
-}
-
-@media (min-width: 50rem) {
-  .diff-par-position {
-    margin-top: 5rem;
-    margin-left: 30rem;
-  }
 }
 
 .input-group {
@@ -242,4 +269,8 @@ section {
   font-size: 1.2rem;
 }
 
-/* section: what are microagression? */
+/* SECTION: what harm do microagressions cause? */
+
+/* SECTION: how can microagressions be disarmed? */
+
+/* SECTION: how can people react who are affected? */
