@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import styled from "styled-components"
 import firebase from "gatsby-plugin-firebase"
 import "./layout.css"
 

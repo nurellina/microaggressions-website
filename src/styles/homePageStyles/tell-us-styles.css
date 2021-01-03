@@ -1,0 +1,39 @@
+/* SECTION: wait, has it ever happend to you? */
+
+.redBgShape {
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+}
+
+.input-group {
+  display: block;
+  width: 90%;
+  height: 4rem;
+  border: 0;
+  background-color: #ffffff;
+  border-bottom-left-radius: 41px;
+  border-bottom-right-radius: 41px;
+  border-top-left-radius: 41px;
+  border-top-right-radius: 0;
+  box-shadow: 0 17px 40px 0 rgba(39, 88, 136, 0.07);
+  margin-bottom: 4rem;
+  position: relative;
+  color: #a7b4c1;
+}
+
+.input-group input {
+  position: absolute;
+  border: 0;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0);
+  height: 4rem;
+  width: 100%;
+  padding: 0 4rem;
+  z-index: 3;
+  display: block;
+  color: var(--clr-neutral-900);
+  font-size: 1.2rem;
+}

@@ -1,0 +1,66 @@
+/* SECTION: what makes microagression different? */
+
+.difference .grid span {
+  color: var(--clr-primary-200);
+  font-family: var(--ff-accent);
+}
+
+@media (min-width: 50rem) {
+  /* TODO: adjust width based on the content (not equal width) */
+  .difference .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1em;
+    margin-bottom: 2rem;
+  }
+
+  .difference .grid span {
+    font-size: 1.8rem;
+  }
+  .word1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .word2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .word3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .word4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+.greenRightDiff {
+  position: absolute;
+  width: 40%;
+  top: 30%;
+  right: 0%;
+  z-index: -1;
+}
+.greenLeftDiff {
+  position: absolute;
+  width: 40%;
+  top: 70%;
+  left: 0%;
+  z-index: -1;
+}
+
+@media (min-width: 50rem) {
+  .diff-par-position {
+    margin-top: 10rem;
+    margin-left: 30rem;
+  }
+}
