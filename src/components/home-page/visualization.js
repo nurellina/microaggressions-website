@@ -6,7 +6,7 @@ import { GeometryUtils } from "../../helpers/GeometryUtils"
 import { gsap } from "gsap"
 import helvetica from "../../../node_modules/three/examples/fonts/helvetiker_regular.typeface.json"
 
-const Visualization = () => {
+function Visualization({ props }) {
   useEffect(() => {
     init()
 
@@ -31,14 +31,15 @@ const Visualization = () => {
   let counter = 0
   let numText = 0
 
-  const phrases = []
-  phrases.push(
-    "You are so exotic!",
-    "You're transgender? \n Wow, you don't \n look like it at all.",
-    "Where are you from?",
-    "You are so articulate.",
-    "I believe the most \nqualified person should \nget the job."
-  )
+  phrases = props.phrases
+  console.log(phrases)
+  // phrases.push(
+  //   "You are so exotic!",
+  //   "You're transgender? \n Wow, you don't \n look like it at all.",
+  //   "Where are you from?",
+  //   "You are so articulate.",
+  //   "I believe the most \nqualified person should \nget the job."
+  // )
 
   function init() {
     // SCENE

@@ -11,11 +11,12 @@ import TellUs from "../components/home-page/tell-us"
 import Harm from "../components/home-page/harm"
 import Disarmed from "../components/home-page/disarmed"
 import Reaction from "../components/home-page/reaction"
+import ShowPhrases from "../components/show-phrases"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Visualization />
+    <ShowPhrases />
     <Vote />
     <Definition />
     <Examples />
