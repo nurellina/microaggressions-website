@@ -10,7 +10,10 @@ const Vote = () => {
         <div className="vote">
           <div className="split">
             <div className="question-to-you ff-accent">
-              <p> Were you ever offended by any of these questions? </p>
+              <p className="ff-accent">
+                {" "}
+                Were you ever offended by any of these questions?{" "}
+              </p>
             </div>
             <div className="feel-you">
               <p className="clr-orange ff-accent margin-bottom">

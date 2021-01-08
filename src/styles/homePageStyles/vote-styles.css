@@ -2,26 +2,39 @@
 
 .question-to-you {
   background: url(../../images/orangeRightHeader.svg);
-  height: 469px;
+  height: 269px;
   background-repeat: no-repeat;
   background-position: center right;
   position: relative;
 }
 .question-to-you p {
-  font-size: 3.5vw;
+  font-size: 3.4vw;
   width: 60%;
   position: absolute;
   top: 55%;
-  left: 50%;
+  left: 60%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+.feel-you {
+  margin-left: 4rem;
+}
+
 @media (min-width: 70rem) {
+  .vote .split {
+    flex-direction: row-reverse;
+  }
+  .question-to-you {
+    font-size: 1.5rem;
+    width: 90%;
+    height: 469px;
+  }
   .question-to-you p {
     font-size: 1.5rem;
     width: 90%;
   }
-  .vote .split {
-    flex-direction: row-reverse;
+  .feel-you {
+    margin-top: 20rem;
+    margin-left: 10rem;
   }
 }
