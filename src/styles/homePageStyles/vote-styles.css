@@ -1,26 +1,27 @@
 /* Section: Where you offended by that question - we feel you */
 
-.feel-you {
-  margin-top: 4rem;
-}
-
-/* .question-to-you::before {
-  content: " ";
-  background: url(../images/shape.svg);
-  background-repeat: no-repeat;
-  height: 469.31px;
-  width: 100%;
-  position: absolute;
-  align-content: center;
-  right: 0;
-  z-index: -1;
-} */
-
 .question-to-you {
-  font-size: 1.2rem;
+  background: url(../../images/orangeRightHeader.svg);
+  height: 469px;
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+}
+.question-to-you p {
+  font-size: 3.5vw;
+  width: 60%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 @media (min-width: 70rem) {
-  .question-to-you {
-    font-size: 2.2rem;
+  .question-to-you p {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .vote .split {
+    flex-direction: row-reverse;
   }
 }

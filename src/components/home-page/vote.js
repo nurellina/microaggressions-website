@@ -7,10 +7,10 @@ const Vote = () => {
   return (
     <div>
       <section>
-        <div className="container">
+        <div className="vote">
           <div className="split">
             <div className="question-to-you ff-accent">
-              Were you offended by any of these questions?
+              <p> Were you ever offended by any of these questions? </p>
             </div>
             <div className="feel-you">
               <p className="clr-orange ff-accent margin-bottom">
