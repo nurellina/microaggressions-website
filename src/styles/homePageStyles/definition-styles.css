@@ -1,1 +1,43 @@
 /* SECTION: what are microagression? */
+.def1 {
+  background: url("../../images/blackDef1.svg");
+  height: 395px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  position: relative;
+}
+.textInsideShape {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  height: 50%;
+}
+.textInsideShape h1 {
+  font-size: 2.5vw;
+  width: 50%;
+}
+.def1 p {
+  color: var(--clr-neutral-100);
+  width: 60%;
+  font-size: 1.8vw;
+}
+
+@media (min-width: 70rem) {
+  .def1 {
+    height: 795px;
+  }
+  /* .question-to-you {
+    font-size: 1.5rem;
+    width: 90%;
+    height: 469px;
+  }
+  .question-to-you p {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .feel-you {
+    margin-top: 20rem;
+    margin-left: 10rem;
+  } */
+}

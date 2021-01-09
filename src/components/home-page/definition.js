@@ -9,23 +9,19 @@ const Definition = () => {
       <article>
         <div className="definition grid">
           <div className="def1">
-            <h1 className="salmon-heading definition">
-              {" "}
-              But, what are microagressions?{" "}
-            </h1>
-            <p className="ff-accent-light">
-              {" "}
-              A microaggression is a <span className="ff-accent">
-                comment
-              </span>{" "}
-              or gesture (whether made intentionally or not) <br />
-              that <span className="ff-accent">feeds into stereotypes</span> or
-              negative assumptions created around oppressed
-              <br /> or <span className="ff-accent">
-                marginalized groups
-              </span>{" "}
-              of people.
-            </p>
+            <div className="textInsideShape">
+              <h1 className="clr-salmon"> But, what are microagressions? </h1>
+              <p className="ff-accent-light">
+                {" "}
+                A microaggression is a{" "}
+                <span className="ff-accent">comment</span> or gesture (whether
+                made intentionally or not) that{" "}
+                <span className="ff-accent">feeds into stereotypes</span> or
+                negative assumptions created around oppressed or{" "}
+                <span className="ff-accent">marginalized groups</span> of
+                people.
+              </p>
+            </div>
           </div>
           <div className="def2">
             <p>

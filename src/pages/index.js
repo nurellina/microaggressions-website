@@ -15,7 +15,7 @@ import Reaction from "../components/home-page/reaction"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Visualization />
+    {/* <Visualization /> */}
     <Vote />
     <Definition />
     <Examples />
