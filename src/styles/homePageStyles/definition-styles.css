@@ -1,1 +1,25 @@
 /* SECTION: what are microagression? */
+.def1 {
+  position: relative;
+  display: inline-block;
+  max-width: 1695px;
+}
+.def1 .textInsideShape {
+  position: absolute;
+  z-index: 999;
+  margin: 4rem 4rem;
+  left: 0;
+  bottom: 0;
+  max-width: 70%;
+}
+.def1 p {
+  max-width: 50rem;
+}
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
