@@ -1,7 +1,7 @@
 /* Section: Where you offended by that question - we feel you */
 
 .question-to-you {
-  background: url(../../images/orangeRightHeader.svg);
+  background: url("../../images/orangeRightHeader.svg");
   height: 269px;
   background-repeat: no-repeat;
   background-position: center right;
