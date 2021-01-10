@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 711.996 305.35">
+  <defs>
+    <style>
+      .clr-salmon {
+        fill: #fd9687;
+        fill-rule: evenodd;
+      }
+      .ff-accent {
+        font-family: "fantasy";
+        font-size: 2rem;
+      }
+    </style>
+  </defs>
+  <path id="shape_másolat_2" data-name="shape másolat 2" class="clr-salmon" d="M779.346,3929.48l-13,163,683,75,29-102-65.74-70.39L926.554,3867.48l-54.393,33.3-32.4-23.73Zm-3,1,3,141,672,77,27-85-57-74L929.418,3868.37l-42.072,31.11-28.263-37.35Z" transform="translate(-766.344 -3862.12)"/>
+<text x="100" y="100" transform="rotate(8)" class="clr-salmon ff-accent"> Is that you real hair? Can I touch it</text>
+</svg>

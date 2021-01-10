@@ -20,16 +20,19 @@
   box-sizing: border-box;
 }
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: var(--ff-primary), Georgia, "Times New Roman", Times, serif;
   letter-spacing: 0.01rem;
   line-height: 1.2;
 }
 article,
 section {
-  width: 100vw;
   display: block;
   padding: 1.5em 0;
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 @media (min-width: 50rem) {
   article,

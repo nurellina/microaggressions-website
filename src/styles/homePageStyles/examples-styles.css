@@ -1,9 +1,52 @@
 /* SECTION: examples of microagressions? */
 
-.green-container {
-  width: 100vw;
-  background-color: var(--clr-neutral-400);
-  height: 30vh;
-  margin-top: 50px;
-  display: inline-block;
+.examples {
+  padding-bottom: 20%;
+  background: linear-gradient(
+    var(--clr-neutral-100),
+    70%,
+    var(--clr-neutral-400) 30%
+  );
+  position: relative;
+}
+.shard {
+  width: 200px;
+  position: absolute;
+}
+.ex__shard1 {
+  top: 80%;
+  left: 30%;
+}
+.ex__shard2 {
+  top: 65%;
+  left: 25%;
+}
+.ex__shard3 {
+  top: 40%;
+  left: 30%;
+}
+.ex__shard4 {
+  top: 75%;
+  left: 25%;
+}
+.ex__shard5 {
+  top: 50%;
+  left: 30%;
+}
+.ex__shard6 {
+  top: 55%;
+  left: 15%;
+}
+.ex__shard7 {
+  top: 80%;
+  left: 20%;
+}
+.ex__shard8 {
+  top: 65%;
+  left: 5%;
+}
+@media (min-width: 40rem) {
+  .shard {
+    width: 400px;
+  }
 }
