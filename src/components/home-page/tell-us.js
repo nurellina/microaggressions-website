@@ -6,13 +6,8 @@ import "../../styles/homePageStyles/tell-us-styles.css"
 const TellUs = () => {
   return (
     <div>
-      <section>
+      <section className="tell-us">
         <div className="container">
-          <img
-            src={redBgShape}
-            className="redBgShape"
-            alt="Red shad as a background"
-          />
           <h1 className="clr-black">
             {" "}
             Wait, has this ever happened to you as well?
