@@ -29,16 +29,9 @@ body {
 article,
 section {
   display: block;
-  padding: 1.5em 0;
   position: relative;
   height: 100%;
   width: 100%;
-}
-@media (min-width: 50rem) {
-  article,
-  section {
-    padding: 3em 0;
-  }
 }
 /* container with header&paragraph and margins on sides */
 .container {

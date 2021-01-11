@@ -5,7 +5,7 @@ import "../../styles/homePageStyles/harm-styles.css"
 const Harm = () => {
   return (
     <div>
-      <article className="bg-dark">
+      <article className=" harm bg-dark">
         <div className="container">
           <h1> What harms do Microaggressions cause? </h1>
           <div className="split">
@@ -37,6 +37,20 @@ const Harm = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="divider">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              className="divider-svg"
+              fill="#FFFF"
+              fill-opacity="1"
+              d="M0,192L360,32L720,0L1080,224L1440,256L1440,0L1080,0L720,0L360,0L0,0Z"
+            ></path>
+          </svg>
         </div>
       </article>
     </div>
