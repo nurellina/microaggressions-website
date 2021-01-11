@@ -38,6 +38,7 @@ section {
   margin: 0 auto;
   /* margin sides: for mobile takes 90% of the screen, for desktop is wider 80.5rem */
   width: min(85%, 80.5rem);
+  padding-top: 6rem;
 }
 h1 {
   font-family: var(--ff-accent);
@@ -75,6 +76,9 @@ img {
 .bg-dark {
   background-color: var(--clr-neutral-900);
   color: var(--clr-neutral-100);
+}
+.bg-red {
+  background-color: var(--clr-primary-400);
 }
 /*  global styles: not link decoration*/
 .no-decor-link {

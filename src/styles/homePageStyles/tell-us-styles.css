@@ -1,11 +1,8 @@
 /* SECTION: wait, has it ever happend to you? */
 
 .tell-us {
-  background: url("../../images/redBgShape.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--clr-primary-400);
   height: 40%;
-  padding: 10rem 2rem;
   /* padding: 10rem; */
 }
 @media (min-width: 40rem) {
