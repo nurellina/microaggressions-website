@@ -6,7 +6,7 @@ import "../../styles/homePageStyles/tell-us-styles.css"
 const TellUs = () => {
   return (
     <div>
-      <section className="tell-us">
+      <section className="tell-us bg-red">
         <div className="container">
           <h1 className="clr-black">
             {" "}
@@ -22,9 +22,9 @@ const TellUs = () => {
             preserveAspectRatio="none"
           >
             <path
-              fill="#000"
+              className="shape-fill"
               fill-opacity="1"
-              d="M0,256L288,256L576,64L864,160L1152,288L1440,288L1440,0L1152,0L864,0L576,0L288,0L0,0Z"
+              d="M0,128L288,0L576,224L864,256L1152,0L1440,160L1440,320L1152,320L864,320L576,320L288,320L0,320Z"
             ></path>
           </svg>
         </div>

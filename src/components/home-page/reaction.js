@@ -7,9 +7,11 @@ const Reaction = () => {
   return (
     <div>
       {" "}
-      <article>
+      <article className="bg-salmon">
         <div className="container">
-          <h1>How can people who are affected by microagressions react?</h1>
+          <h1 className="clr-black">
+            How can people who are affected by microagressions react?
+          </h1>
           {/* your code here */}
         </div>
       </article>

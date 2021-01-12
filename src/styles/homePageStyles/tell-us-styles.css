@@ -1,7 +1,8 @@
 /* SECTION: wait, has it ever happend to you? */
-
+.tell-us .shape-fill {
+  color: var(--clr-neutral-900);
+}
 .tell-us {
-  background-color: var(--clr-primary-400);
   height: 40%;
   /* padding: 10rem; */
 }
