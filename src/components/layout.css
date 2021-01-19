@@ -166,3 +166,25 @@ img {
     height: 300px;
   }
 }
+/* SVG shape with text overlay */
+.shapeTextWrapper {
+  position: relative;
+}
+.shapeImage {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.shapeText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+}
+
+@media only screen and (min-width: 961px) {
+  .shapeText {
+    font-size: 1.5rem;
+  }
+}
