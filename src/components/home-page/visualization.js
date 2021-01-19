@@ -6,7 +6,7 @@ import { GeometryUtils } from "../../helpers/GeometryUtils"
 import { gsap } from "gsap"
 import helvetica from "../../../node_modules/three/examples/fonts/helvetiker_regular.typeface.json"
 
-function Visualization({ props }) {
+const Visualization = props => {
   useEffect(() => {
     init()
 
@@ -31,15 +31,14 @@ function Visualization({ props }) {
   let counter = 0
   let numText = 0
 
-  phrases = props.phrases
-  console.log(phrases)
-  // phrases.push(
-  //   "You are so exotic!",
-  //   "You're transgender? \n Wow, you don't \n look like it at all.",
-  //   "Where are you from?",
-  //   "You are so articulate.",
-  //   "I believe the most \nqualified person should \nget the job."
-  // )
+  //   const phrases = []
+  //   phrases.push(
+  //     "You are so exotic!",
+  //     "You're transgender? \n Wow, you don't \n look like it at all.",
+  //     "Where are you from?",
+  //     "You are so articulate.",
+  //     "I believe the most \nqualified person should \nget the job."
+  //   )
 
   function init() {
     // SCENE
@@ -95,7 +94,7 @@ function Visualization({ props }) {
   }
 
   function createText() {
-    phrases.forEach((phrase, i) => {
+    props.phrases.forEach((phrase, i) => {
       const textGeo = new THREE.TextGeometry(phrase, {
         font: font,
         size: 30,
@@ -189,8 +188,7 @@ function Visualization({ props }) {
 
   function switchPhrase() {
     counter++
-    numText = counter % phrases.length
-    console.log("numText: " + numText)
+    numText = counter % props.phrases.length
   }
 
   function animate() {

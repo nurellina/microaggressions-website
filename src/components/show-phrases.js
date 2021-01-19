@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import firebase from "gatsby-plugin-firebase"
-import Visualization from "../components/home-page/visualization"
+import Visualization from "./home-page/visualization"
 
 function ShowPhrases() {
   const [phrases, setPhrases] = useState([])
@@ -17,9 +17,19 @@ function ShowPhrases() {
       })
   })
 
+  const phrasesArray = []
+  phrasesArray.push(
+    "You are so exotic!",
+    "You're transgender? \n Wow, you don't \n look like it at all.",
+    "Where are you from?",
+    "You are so articulate.",
+    "I believe the most \nqualified person should \nget the job."
+  )
+  //   console.log(phrasesArray)
+
   return (
     <div>
-      <Visualization phrases={phrases} />
+      <Visualization phrases={phrasesArray} />
     </div>
     // <ListsDiv>
     //   {/*list all the items*/}
