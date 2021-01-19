@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="512" viewBox="0 0 1080 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fd9687;
+        stroke: #fff;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="shape_másolat_14" data-name="shape másolat 14" class="cls-1" d="M-646.985,15713h1790l-135-112.8,23.55-261.9L512.9,15206l-907.356,167.4Z" transform="translate(0 -15203.5)"/>
+</svg>
