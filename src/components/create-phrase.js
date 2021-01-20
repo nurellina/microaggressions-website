@@ -18,14 +18,17 @@ const CreatePhrase = () => {
     setPhrase(e.target.value)
   }
   return (
-    <div class="input-group">
-      <input
-        placeholder="Type it here..."
-        name="phrase"
-        value={phrase}
-        onChange={handleChange}
-      />
-    </div>
+    <>
+      <div class="input-group">
+        <input
+          placeholder="Type it here..."
+          name="phrase"
+          value={phrase}
+          onChange={handleChange}
+        />
+      </div>
+      <button onClick={addPhrase}>Submit</button>
+    </>
   )
 }
 

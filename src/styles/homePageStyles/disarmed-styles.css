@@ -1,1 +1,11 @@
 /* SECTION: how can microagressions be disarmed? */
+.disarmed .shape-fill {
+  fill: var(--clr-neutral-300);
+}
+.disarmed .shapeTextWrapper {
+  width: 98%;
+  max-width: 800px;
+}
+.disarmed .shapeText {
+  width: 80%;
+}

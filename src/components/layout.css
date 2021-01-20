@@ -29,22 +29,16 @@ body {
 article,
 section {
   display: block;
-  padding: 1.5em 0;
   position: relative;
   height: 100%;
   width: 100%;
-}
-@media (min-width: 50rem) {
-  article,
-  section {
-    padding: 3em 0;
-  }
 }
 /* container with header&paragraph and margins on sides */
 .container {
   margin: 0 auto;
   /* margin sides: for mobile takes 90% of the screen, for desktop is wider 80.5rem */
   width: min(85%, 80.5rem);
+  padding-top: 6rem;
 }
 h1 {
   font-family: var(--ff-accent);
@@ -57,7 +51,8 @@ p {
   max-width: 35rem;
 }
 
-@media (min-width: 70rem) {
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
   h1 {
     font-size: 4rem;
   }
@@ -65,9 +60,11 @@ p {
     font-size: 1.2rem;
   }
 }
+
 img {
   display: block;
   width: 100%;
+  outline: none;
 }
 /* global styles: adding color to paragraph, bg or heading */
 .clr-salmon {
@@ -76,12 +73,23 @@ img {
 .clr-orange {
   color: var(--clr-primary-200);
 }
+.clr-white {
+  color: var(--clr-neutral-100);
+}
 .clr-black {
   color: var(--clr-neutral-900);
 }
 .bg-dark {
   background-color: var(--clr-neutral-900);
-  color: var(--clr-neutral-100);
+}
+.bg-red {
+  background-color: var(--clr-primary-400);
+}
+.bg-salmon {
+  background-color: var(--clr-neutral-300);
+}
+.bg-green {
+  background-color: var(--clr-neutral-400);
 }
 /*  global styles: not link decoration*/
 .no-decor-link {
@@ -105,7 +113,9 @@ img {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 70rem) {
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
   .split {
     flex-direction: row;
   }
@@ -128,4 +138,53 @@ img {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+}
+
+/* SVG shape dection divider */
+.divider {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.divider-svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .divider-svg {
+    height: 200px;
+  }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .divider-svg {
+    height: 300px;
+  }
+}
+/* SVG shape with text overlay */
+.shapeTextWrapper {
+  position: relative;
+}
+.shapeImage {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.shapeText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+}
+
+@media only screen and (min-width: 961px) {
+  .shapeText {
+    font-size: 1.5rem;
+  }
 }
