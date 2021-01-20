@@ -1,1 +1,81 @@
 /* SECTION: how can people react who are affected? */
+
+.reaction{
+    background-color: var(--clr-neutral-300);
+    /* background-image: url("../../images/salmonBgShape.svg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    /*padding-top: 0rem;*/
+}
+
+.shape-fill {
+    fill: var(--clr-neutral-300);
+    margin: 0;
+    padding: 0;
+  }
+@media (min-width: 70rem) {
+    .reaction {
+      height: 70%;
+    }
+}
+
+/*flexbox with two equal sized columns */
+.split-r {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.column-r {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center; 
+}
+
+.allign-hcenter{
+    /*center text horizontally*/
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.shape1 {
+    width:27em; 
+    height:13em;
+    background-image: url("../../images/blob-2.svg");
+    background-repeat: no-repeat;
+    position:relative;
+    left: 50%;
+    transform: translateX(-40%);
+}
+@media (min-width: 70rem) {
+    .shape1 {
+        width:30em; 
+        height:15em;
+    }
+}
+.shape1Txt {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.shape2 {
+    width:9em; 
+    height:5em;
+    background-image: url("../../images/blob.svg");
+    background-repeat: no-repeat;
+    top: 50%;
+}
+.shape2Txt {
+    position: relative;
+    text-align: center;
+    top: 40%;
+    left: -10%;
+}
