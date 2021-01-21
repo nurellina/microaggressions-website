@@ -7,20 +7,6 @@ const Reaction = () => {
   return (
     <div>
       {" "}
-      <div className="divider bg-salmon">
-        <svg
-          className="divider-svg"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-          preserveAspectRatio="none"
-        >
-          <path
-            className="shape-fill"
-            fill-opacity="1"
-            d="M-6.8,55.1L581,141.7L1036.7,4.1l886.2,213.7L2028.1,984L-2,989L-6.8,55.1z"
-          ></path>
-        </svg>
-      </div>
       <article className="reaction">
         <div className="container">
           <h1 className="clr-black">

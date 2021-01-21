@@ -38,7 +38,7 @@ section {
   margin: 0 auto;
   /* margin sides: for mobile takes 90% of the screen, for desktop is wider 80.5rem */
   width: min(85%, 80.5rem);
-  padding-top: 6rem;
+  padding-top: 1.5rem;
 }
 h1 {
   font-family: var(--ff-accent);
@@ -152,7 +152,7 @@ img {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 150px;
+  height: 100px;
 }
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
