@@ -41,6 +41,16 @@ const Vote = () => {
             </div>
           </div>
         </div>
+        <div className="divide">
+          <svg
+            className="divider-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+            >
+            <path d="M-5.7,206.4L866.6,61.2l348,260.9l-1218.8,9L-5.7,206.4z"/>
+          </svg>
+        </div>
       </section>
     </div>
   )

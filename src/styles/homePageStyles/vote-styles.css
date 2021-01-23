@@ -3,6 +3,9 @@
 .feel-you {
   margin-left: 4rem;
 }
+.fill-shape {
+  fill: var(--clr-neutral-100);
+}
 
 @media only screen and (min-width: 961px) {
   .vote .split {
