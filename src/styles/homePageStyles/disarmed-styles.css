@@ -4,8 +4,67 @@
 }
 .disarmed .shapeTextWrapper {
   width: 98%;
-  max-width: 800px;
+  max-width: 400px;
+}
+@media only screen and (min-width: 961px) {
+  .disarmed .shapeTextWrapper {
+    max-width: 800px;
+  }
 }
 .disarmed .shapeText {
   width: 80%;
+}
+.imgDisarmed {
+  width: 340px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 961px) {
+  .imgDisarmed {
+    width: 680px;
+  }
+}
+
+.stackedWrapper1 {
+  position: relative;
+  display: block;
+  height: 720px;
+}
+
+.stackedWrapper1 .shapeTextWrapper {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.stackedWrapper1 .container {
+  position: absolute;
+  top: 170px;
+  left: 3rem;
+}
+
+.stackedWrapper2 {
+  position: relative;
+  display: block;
+  height: 1100px;
+}
+
+.stackedWrapper2 .firstBlob {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.stackedWrapper2 .secondBlob {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: 2;
+}
+.stackedWrapper2 .thirdBlob {
+  position: absolute;
+  top: 200px;
+  z-index: 3;
+}
+.stackedWrapper2 .container {
+  position: absolute;
+  top: 400px;
+  left: 3rem;
 }
