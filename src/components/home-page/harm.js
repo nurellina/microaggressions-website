@@ -5,7 +5,7 @@ import "../../styles/homePageStyles/harm-styles.css"
 const Harm = () => {
   return (
     <div>
-      <article className="bg-dark">
+      <article className="harm bg-dark">
         <div className="container">
           <h1> What harms do Microaggressions cause? </h1>
           <div className="split">
@@ -23,7 +23,7 @@ const Harm = () => {
               </p>
             </div>
             <div className="column">
-              <p>
+              <p className="clr-white">
                 {" "}
                 Most of the time, such microinvalidations and aggressions are
                 disguised as humor. Often you might feel irritated and 'othered'
@@ -37,6 +37,20 @@ const Harm = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="divider">
+          <svg
+            className="divider-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              className="shape-fill"
+              fill-opacity="1"
+              d="M0,224L288,224L576,288L864,192L1152,128L1440,288L1440,320L1152,320L864,320L576,320L288,320L0,320Z"
+            ></path>
+          </svg>
         </div>
       </article>
     </div>
