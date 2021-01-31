@@ -2,6 +2,8 @@
 import React from "react"
 import "../../styles/homePageStyles/disarmed-styles.css"
 import greenCircle from "../../images/greenCircle.svg"
+import greenCircle2 from "../../images/greenCircle2.svg"
+import greenCircle3 from "../../images/greenCircle3.svg"
 import img from "../../images/img.png"
 
 const Disarmed = () => {
@@ -42,30 +44,40 @@ const Disarmed = () => {
         </div>
         <div className="stackedWrapper2">
           <div className="shapeTextWrapper firstBlob">
-            <img src={greenCircle} alt="green circle" className="shapeImage" />
-            <p className="shapeText ff-accent">
-              Ask for clarification “Could you say more about what you mean by
-              that?” “How have you come to think that?”
-            </p>
+            <img src={greenCircle2} alt="green circle" className="shapeImage" />
+            <div class="shapeText">
+              <h4 className="ff-accent margin-bottom">Ask for clarification</h4>
+              <p>
+                “Could you say more about what you mean by that?” “How have you
+                come to think that?”
+              </p>
+            </div>
           </div>
           <div className="shapeTextWrapper secondBlob">
             <img src={greenCircle} alt="green circle" className="shapeImage" />
-            <p className="shapeText ff-accent">
-              {" "}
-              Separate intent from impact “I know you didn’t realize this, but
-              when you __________ (comment/behavior), it was hurtful/offensive
-              because___________. Instead you could___________ (different
-              language or behavior.)”
-            </p>
+            <div class="shapeText">
+              <h4 className="ff-accent margin-bottom">
+                Separate intent from impact
+              </h4>
+              <p>
+                “I know you didn’t realize this, but when you __________
+                (comment/behavior), it was hurtful/offensive because___________.
+                Instead you could___________ (different language or behavior.)”
+              </p>
+            </div>
           </div>
           <div className="shapeTextWrapper thirdBlob">
-            <img src={greenCircle} alt="green circle" className="shapeImage" />
-            <p className="shapeText ff-accent">
-              {" "}
-              Share your own process “I noticed that you ___________
-              (comment/behavior). I used to do/say that too, but then I
-              learned____________.”
-            </p>
+            <img src={greenCircle3} alt="green circle" className="shapeImage" />
+            <div class="shapeText">
+              <h4 className="ff-accent margin-bottom">
+                Share your own process
+              </h4>
+              <p>
+                {" "}
+                “I noticed that you ___________ (comment/behavior). I used to
+                do/say that too, but then I learned____________.”
+              </p>
+            </div>
           </div>
           <div className="container">
             <img src={img} className="imgDisarmed" alt="disarmed" />
