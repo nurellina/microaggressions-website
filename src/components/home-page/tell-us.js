@@ -12,6 +12,9 @@ const TellUs = () => {
             {" "}
             Wait, has this ever happened to you as well?
           </h1>
+          <h2>
+            What is the most important sentence/act that comes to your mind?
+          </h2>
           <CreatePhrase />
         </div>
         <div className="divider bg-red">
@@ -24,7 +27,7 @@ const TellUs = () => {
             <path
               className="shape-fill"
               fill-opacity="1"
-              d="M0,128L288,0L576,224L864,256L1152,0L1440,160L1440,320L1152,320L864,320L576,320L288,320L0,320Z"
+              d="M0,64L720,192L1440,32L1440,320L720,320L0,320Z"
             ></path>
           </svg>
         </div>
