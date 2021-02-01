@@ -1,1 +1,4 @@
 /* SECTION: common characteristics? */
+.characteristics .shape-fill {
+  fill: var(--clr-neutral-100);
+}
