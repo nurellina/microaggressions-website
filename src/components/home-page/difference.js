@@ -6,8 +6,8 @@ import "../../styles/homePageStyles/difference-styles.css"
 const Difference = () => {
   return (
     <div>
-      <article>
-        <div className="container difference">
+      <article className="difference">
+        <div className="container">
           <img
             src={greenRight}
             className="greenRightDiff"
@@ -52,6 +52,20 @@ const Difference = () => {
             They would deny it because they don't recognize that their behaviors
             communicate their racial biases.
           </p>
+        </div>
+        <div className="divider">
+          <svg
+            className="divider-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              className="shape-fill"
+              fill-opacity="1"
+              d="M0,192L480,224L960,64L1440,224L1440,320L960,320L480,320L0,320Z"
+            ></path>
+          </svg>
         </div>
       </article>
     </div>

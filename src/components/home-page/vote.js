@@ -2,15 +2,26 @@
 
 import React from "react"
 import "../../styles/homePageStyles/vote-styles.css"
+import orangeRightHeader from "../../images/orangeRightHeader.svg"
 
 const Vote = () => {
   return (
     <div>
       <section>
-        <div className="container">
+        <div className="vote">
           <div className="split">
-            <div className="question-to-you ff-accent">
-              Were you offended by any of these questions?
+            <div className="question-to-you">
+              <div className="shapeTextWrapper">
+                <img
+                  src={orangeRightHeader}
+                  alt="orange shape"
+                  className="shapeImage"
+                />
+                <p className="shapeText ff-accent">
+                  {" "}
+                  Were you ever offended by any of these questions?{" "}
+                </p>
+              </div>
             </div>
             <div className="feel-you">
               <p className="clr-orange ff-accent margin-bottom">
@@ -29,6 +40,16 @@ const Vote = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="divide">
+          <svg
+            className="divider-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+            >
+            <path d="M-5.7,206.4L866.6,61.2l348,260.9l-1218.8,9L-5.7,206.4z"/>
+          </svg>
         </div>
       </section>
     </div>

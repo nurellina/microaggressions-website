@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import firebase from "gatsby-plugin-firebase"
-import "./layout.css"
 
 const CreatePhrase = () => {
   //store value in react state using useState Hooks
@@ -18,13 +17,19 @@ const CreatePhrase = () => {
     setPhrase(e.target.value)
   }
   return (
-    <div class="input-group">
-      <input
-        placeholder="Type it here..."
-        name="phrase"
-        value={phrase}
-        onChange={handleChange}
-      />
+    <div className="create-phrase">
+      <div className="input-group">
+        <input
+          autocomplete="off"
+          placeholder="Type it here..."
+          name="phrase"
+          value={phrase}
+          onChange={handleChange}
+        />
+      </div>
+      <button class="pure-material-button-outlined" onClick={addPhrase}>
+        Send
+      </button>
     </div>
   )
 }

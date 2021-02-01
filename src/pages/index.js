@@ -6,6 +6,7 @@ import Definition from "../components/home-page/definition"
 import Examples from "../components/home-page/examples"
 import Difference from "../components/home-page/difference"
 import Characteristics from "../components/home-page/characteristics"
+import Forms from "../components/home-page/forms"
 import TellUs from "../components/home-page/tell-us"
 import Harm from "../components/home-page/harm"
 import Disarmed from "../components/home-page/disarmed"
@@ -21,6 +22,7 @@ const IndexPage = () => (
     <Examples />
     <Difference />
     <Characteristics />
+    <Forms />
     <TellUs />
     <Harm />
     <Disarmed />
