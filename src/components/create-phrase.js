@@ -20,14 +20,14 @@ const CreatePhrase = () => {
     <div className="create-phrase">
       <div className="input-group">
         <input
-          autocomplete="off"
+          autoComplete="off"
           placeholder="Type it here..."
           name="phrase"
           value={phrase}
           onChange={handleChange}
         />
       </div>
-      <button class="pure-material-button-outlined" onClick={addPhrase}>
+      <button className="pure-material-button-outlined" onClick={addPhrase}>
         Send
       </button>
     </div>

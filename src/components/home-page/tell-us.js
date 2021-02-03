@@ -26,7 +26,7 @@ const TellUs = () => {
           >
             <path
               className="shape-fill"
-              fill-opacity="1"
+              fillOpacity="1"
               d="M0,64L720,192L1440,32L1440,320L720,320L0,320Z"
             ></path>
           </svg>
