@@ -107,13 +107,17 @@ const Examples = () => {
             {" "}
             Prof. Derald W. Sue demonstrates an example of microaggressions
             towards Asian Americans and Latin Americans, who are frequently
-            complimented for ‘speaking good English,’“
+            complimented for{" "}
+            <span className="ff-accent"> ‘speaking good English,’</span>
           </p>
           <p className="clr-salmon">
             {" "}
             But there is a hidden communication the target experiences: ‘You
-            speak excellent English’ to the target says 'You are not a true
-            American. You're a perpetual alien in your own country'”
+            speak excellent English’ to the target says{" "}
+            <span className="ff-accent">
+              'You are not a true American. You're a perpetual alien in your own
+              country'.
+            </span>
           </p>
         </div>
       </article>
