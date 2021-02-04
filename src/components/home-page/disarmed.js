@@ -45,7 +45,7 @@ const Disarmed = () => {
         <div className="stackedWrapper2">
           <div className="shapeTextWrapper firstBlob">
             <img src={greenCircle2} alt="green circle" className="shapeImage" />
-            <div class="shapeText">
+            <div className="shapeText">
               <h4 className="ff-accent margin-bottom">Ask for clarification</h4>
               <p>
                 “Could you say more about what you mean by that?” “How have you
@@ -55,7 +55,7 @@ const Disarmed = () => {
           </div>
           <div className="shapeTextWrapper secondBlob">
             <img src={greenCircle} alt="green circle" className="shapeImage" />
-            <div class="shapeText">
+            <div className="shapeText">
               <h4 className="ff-accent margin-bottom">
                 Separate intent from impact
               </h4>
@@ -68,7 +68,7 @@ const Disarmed = () => {
           </div>
           <div className="shapeTextWrapper thirdBlob">
             <img src={greenCircle3} alt="green circle" className="shapeImage" />
-            <div class="shapeText">
+            <div className="shapeText">
               <h4 className="ff-accent margin-bottom">
                 Share your own process
               </h4>
@@ -102,7 +102,7 @@ const Disarmed = () => {
           >
             <path
               className="shape-fill"
-              fill-opacity="1"
+              fillOpacity="1"
               d="M-6.8,55.1L581,141.7L1036.7,4.1l886.2,213.7L2028.1,984L-2,989L-6.8,55.1z"
             ></path>
           </svg>
