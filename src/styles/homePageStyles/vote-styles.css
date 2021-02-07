@@ -1,26 +1,19 @@
 /* Section: Where you offended by that question - we feel you */
 
 .feel-you {
-  margin-top: 4rem;
+  margin-left: 4rem;
+}
+.fill-shape {
+  fill: var(--clr-neutral-100);
 }
 
-/* .question-to-you::before {
-  content: " ";
-  background: url(../images/shape.svg);
-  background-repeat: no-repeat;
-  height: 469.31px;
-  width: 100%;
-  position: absolute;
-  align-content: center;
-  right: 0;
-  z-index: -1;
-} */
+@media only screen and (min-width: 961px) {
+  .vote .split {
+    flex-direction: row-reverse;
+  }
 
-.question-to-you {
-  font-size: 1.2rem;
-}
-@media (min-width: 70rem) {
-  .question-to-you {
-    font-size: 2.2rem;
+  .feel-you {
+    margin-top: 20rem;
+    margin-left: 10rem;
   }
 }

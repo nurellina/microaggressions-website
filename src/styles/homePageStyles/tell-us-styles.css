@@ -1,13 +1,21 @@
 /* SECTION: wait, has it ever happend to you? */
-
-.redBgShape {
-  position: absolute;
-  width: 100%;
-  top: 0%;
-  left: 0%;
-  z-index: -1;
+.tell-us .shape-fill {
+  color: var(--clr-neutral-900);
 }
-
+.tell-us {
+  height: 40%;
+  /* padding: 10rem; */
+}
+@media (min-width: 40rem) {
+  .tell-us {
+    height: 70%;
+  }
+}
+/* @media (min-width: 70rem) {
+  .tell-us {
+    height: 90vh;
+  }
+} */
 .input-group {
   display: block;
   width: 90%;
@@ -19,7 +27,7 @@
   border-top-left-radius: 41px;
   border-top-right-radius: 0;
   box-shadow: 0 17px 40px 0 rgba(39, 88, 136, 0.07);
-  margin-bottom: 4rem;
+  margin: 4rem 0;
   position: relative;
   color: #a7b4c1;
 }
