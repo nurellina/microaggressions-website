@@ -7,7 +7,7 @@ const Harm = () => {
     <div>
       <article className="harm bg-dark">
         <div className="container">
-          <h1> What harms do Microaggressions cause? </h1>
+          <h1 className="clr-red"> What harms do Microaggressions cause? </h1>
           <div className="split">
             <div className="column">
               <p className="clr-white">
@@ -20,7 +20,7 @@ const Harm = () => {
                 serve to exclude people have real and serious consequences, both
                 in the moment and cumulatively.” (SAE)
               </p>
-              <p className="clr-white ff-accent">
+              <p className="clr-purple ff-accent">
                 Most of the time, such microinvalidations and aggressions are
                 disguised as humor.
               </p>
@@ -36,7 +36,7 @@ const Harm = () => {
               </p>
             </div>
             <div className="column">
-              <p className="clr-white ff-accent">What is stereotype threat?</p>
+              <p className="clr-purple ff-accent">What is stereotype threat?</p>
               <p className="clr-white">
                 Psychologists and educators have shown that "stereotype threat"
                 can cause an achievement gap. When a negative stereotype is

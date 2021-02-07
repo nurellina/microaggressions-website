@@ -7,9 +7,9 @@ const Reaction = () => {
   return (
     <div>
       {" "}
-      <article className="reaction">
+      <article className="reaction bg-salmon">
         <div className="container">
-          <h1 className="clr-black">
+          <h1 className="clr-white">
             {" "}
             How can people who are affected by microagressions react?{" "}
           </h1>

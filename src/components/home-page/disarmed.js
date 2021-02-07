@@ -1,9 +1,10 @@
 /* SECTION: how can microagressions be disarmed? */
 import React from "react"
 import "../../styles/homePageStyles/disarmed-styles.css"
-import greenCircle from "../../images/greenCircle.svg"
-import greenCircle2 from "../../images/greenCircle2.svg"
-import greenCircle3 from "../../images/greenCircle3.svg"
+import disarm1 from "../../images/disarm1.png"
+import disarm2 from "../../images/disarm2.png"
+import disarm3 from "../../images/disarm3.png"
+import disarm4 from "../../images/disarm4.png"
 import img from "../../images/img.png"
 
 const Disarmed = () => {
@@ -11,8 +12,8 @@ const Disarmed = () => {
     <div>
       <article className="disarmed">
         <div className="container">
-          <h1 className="clr-black">How can microagressions be disarmed</h1>
-          <p className="ff-accent clr-orange"> THE PROBLEM: </p>
+          <h1 className="clr-red">How can microagressions be disarmed</h1>
+          <p className="ff-accent clr-green"> THE PROBLEM: </p>
           <p>
             Calling someone out by pointing to the underlying homophobia, racism
             or sexism in their behaviours, oftentimes results in a very
@@ -20,17 +21,11 @@ const Disarmed = () => {
             impact of their actions. This is due to the underlying subconscious
             nature or implicit biases of microaggressions
           </p>
-          <p className="ff-accent clr-orange">RATHER TRY TO COMMUNICATE: </p>
+          <p className="ff-accent clr-green">RATHER TRY TO COMMUNICATE: </p>
         </div>
         <div className="stackedWrapper1">
           <div className="shapeTextWrapper">
-            <img src={greenCircle} alt="green circle" className="shapeImage" />
-            <p className="shapeText ff-accent">
-              {" "}
-              We are all prone to mistakes and it's not necessarily that you're
-              a “bad” person if you commit a microaggression, but try to be more
-              aware of your implicit biases and their effect on your behaviour
-            </p>
+            <img src={disarm1} alt="green circle" className="shapeImage" />
           </div>
           <div className="container">
             <img src={img} className="imgDisarmed" alt="disarmed" />
@@ -43,41 +38,16 @@ const Disarmed = () => {
           </div>
         </div>
         <div className="stackedWrapper2">
-          <div className="shapeTextWrapper firstBlob">
-            <img src={greenCircle2} alt="green circle" className="shapeImage" />
-            <div className="shapeText">
-              <h4 className="ff-accent margin-bottom">Ask for clarification</h4>
-              <p>
-                “Could you say more about what you mean by that?” “How have you
-                come to think that?”
-              </p>
+          <div className="split">
+            <div className="shapeTextWrapper firstBlob">
+              <img src={disarm2} alt="green circle" className="shapeImage" />
             </div>
-          </div>
-          <div className="shapeTextWrapper secondBlob">
-            <img src={greenCircle} alt="green circle" className="shapeImage" />
-            <div className="shapeText">
-              <h4 className="ff-accent margin-bottom">
-                Separate intent from impact
-              </h4>
-              <p>
-                “I know you didn’t realize this, but when you __________
-                (comment/behavior), it was hurtful/offensive because___________.
-                Instead you could___________ (different language or behavior.)”
-              </p>
+            <div className="shapeTextWrapper secondBlob">
+              <img src={disarm3} alt="green circle" className="shapeImage" />
             </div>
           </div>
           <div className="shapeTextWrapper thirdBlob">
-            <img src={greenCircle3} alt="green circle" className="shapeImage" />
-            <div className="shapeText">
-              <h4 className="ff-accent margin-bottom">
-                Share your own process
-              </h4>
-              <p>
-                {" "}
-                “I noticed that you ___________ (comment/behavior). I used to
-                do/say that too, but then I learned____________.”
-              </p>
-            </div>
+            <img src={disarm4} alt="green circle" className="shapeImage" />
           </div>
           <div className="container">
             <img src={img} className="imgDisarmed" alt="disarmed" />
@@ -85,7 +55,7 @@ const Disarmed = () => {
               One principle underlying these statements is helping the aggressor
               understand she or he is not under attack for their comment.
             </p>
-            <p className="ff-accent clr-orange">
+            <p className="ff-accent clr-green">
               “If we want people to hear what we’re saying and potentially
               change their behavior, we have to think about things that will not
               immediately make them defensive,”
@@ -93,7 +63,7 @@ const Disarmed = () => {
             <p>Dr. Goodman said.</p>
           </div>
         </div>
-        <div className="divide">
+        <div className="divider">
           <svg
             className="divider-svg"
             xmlns="http://www.w3.org/2000/svg"

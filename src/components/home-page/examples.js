@@ -102,19 +102,22 @@ const Examples = () => {
           className="shard ex__shard10"
         />
         <div className="container">
-          <h1> Examples of microagressions </h1>
-          <p className="clr-salmon">
+          <h1 className="clr-red"> Examples of microagressions </h1>
+          <p>
             {" "}
             Prof. Derald W. Sue demonstrates an example of microaggressions
             towards Asian Americans and Latin Americans, who are frequently
             complimented for{" "}
-            <span className="ff-accent"> ‘speaking good English,’</span>
+            <span className="ff-accent clr-yellow">
+              {" "}
+              ‘speaking good English,’
+            </span>
           </p>
-          <p className="clr-salmon">
+          <p>
             {" "}
             But there is a hidden communication the target experiences: ‘You
             speak excellent English’ to the target says{" "}
-            <span className="ff-accent">
+            <span className="ff-accent clr-yellow">
               'You are not a true American. You're a perpetual alien in your own
               country'.
             </span>

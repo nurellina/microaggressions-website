@@ -65,5 +65,5 @@
   }
 }
 .difference .shape-fill {
-  fill: var(--clr-neutral-400);
+  fill: var(--clr-secondary-100);
 }
