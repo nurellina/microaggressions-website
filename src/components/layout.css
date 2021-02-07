@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   width: 100vw;
@@ -31,12 +32,12 @@ body {
   font-family: var(--ff-primary), Georgia, "Times New Roman", Times, serif;
   letter-spacing: 0.01rem;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 article,
 section {
   position: relative;
 }
-
 
 .hamburger-menu {
   cursor: pointer;
@@ -52,10 +53,8 @@ section {
   /* background: $text; */
 }
 
-
 @media (min-width: 50rem) {
-  article,
-  section {
+  .glossary {
     padding: 3em 0;
   }
 }
