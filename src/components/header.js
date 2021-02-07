@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import "./layout.css"
@@ -25,7 +25,8 @@ const Header = ({ siteTitle, setMenuState, menuState }) => {
           {/* <div className="menu"> */}
           <div
             onClick={() => setMenuState(!menuState)}
-            className="hamburger-menu">
+            className="hamburger-menu"
+          >
             <span></span>
             <span></span>
             <span></span>
