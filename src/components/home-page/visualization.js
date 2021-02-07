@@ -1,12 +1,35 @@
 import React from "react"
 import { useEffect } from "react" //wie onChange listener
 import * as THREE from "three"
-import { OrbitControls } from "../../../node_modules/three/examples/jsm/controls/OrbitControls"
 import { GeometryUtils } from "../../helpers/GeometryUtils"
 import { gsap } from "gsap"
-import helvetica from "../../../node_modules/three/examples/fonts/helvetiker_regular.typeface.json"
+import helvetica from "three/examples/fonts/helvetiker_regular.typeface"
 
-const Visualization = () => {
+// THREE VARIABLES
+let camera, scene, renderer
+const font = new THREE.Font(helvetica)
+
+// PARTICLE VARIABLES
+let particleCount = 2200
+let shardColors = ["#212121", "#080808", "#262626", "#6b1010", "#6e2d2d"]
+let particles = []
+let randomPointsInSphere = []
+let counter = 0
+let numText = 0
+
+// ARRAY VARIABLES FOR PHRASES
+let triggerOnce = true
+let posList = []
+const phrasesArray = []
+phrasesArray.push(
+  "You are so articulate.",
+  "Where are you from?",
+  "You're transgender? \n Wow, you don't \n look like it at all.",
+  "You are so exotic!",
+  "The most qualified \n person should \n get the job."
+)
+
+const Visualization = ({ phrases }) => {
   useEffect(() => {
     init()
 
@@ -14,31 +37,16 @@ const Visualization = () => {
     container.appendChild(renderer.domElement)
 
     createShard()
-    updateParticles()
     animate()
-  })
 
-  let camera, scene, renderer, controls
+    setTimeout(() => {
+      updateParticles()
+    }, 150)
 
-  const font = new THREE.Font(helvetica)
-
-  let posList = []
-  let particleCount = 4500
-  let shardColors = ["#212121", "#080808", "#262626", "#6b1010", "#6e2d2d"]
-  let particles = []
-  let randomPointsInSphere = []
-
-  let counter = 0
-  let numText = 0
-
-  const phrases = []
-  phrases.push(
-    "You are so exotic!",
-    "You're transgender? \n Wow, you don't \n look like it at all.",
-    "Where are you from?",
-    "You are so articulate.",
-    "I believe the most \nqualified person should \nget the job."
-  )
+    setInterval(() => {
+      updateParticles()
+    }, 12700)
+  }, [])
 
   function init() {
     // SCENE
@@ -48,7 +56,7 @@ const Visualization = () => {
     // CAMERA
     const ratio = window.innerWidth / window.innerHeight
     camera = new THREE.PerspectiveCamera(75, ratio, 0.1, 1000)
-    camera.position.z = 400 / ratio
+    camera.position.z = 320 / ratio
     // camera.position.z = 200
 
     // RENDERER
@@ -64,9 +72,6 @@ const Visualization = () => {
       camera.updateProjectionMatrix()
     })
 
-    // CONTROLS FOR NAVIGATION
-    // controls = new OrbitControls(camera, renderer.domElement)
-
     // LIGHTING
     let ambientLight = new THREE.AmbientLight(0xffffff, 1)
     scene.add(ambientLight)
@@ -74,7 +79,20 @@ const Visualization = () => {
     createText()
 
     for (let i = 0; i < particleCount; i++) {
-      randomPointsInSphere.push(randomSpherePoint(200))
+      randomPointsInSphere.push(randomSpherePoint(380))
+    }
+  }
+
+  if (phrases && phrases.length > 0) {
+    if (triggerOnce) {
+      // filtering out empty entries
+      phrases = phrases.filter(function (element) {
+        return element !== ""
+      })
+      triggerOnce = false
+      phrasesArray.push(...phrases)
+
+      createText()
     }
   }
 
@@ -94,45 +112,46 @@ const Visualization = () => {
   }
 
   function createText() {
-    phrases.forEach((phrase, i) => {
-      const textGeo = new THREE.TextGeometry(phrase, {
-        font: font,
-        size: 30,
-        height: 1,
-        curveSegments: 12,
-      })
+    phrasesArray.forEach((phrase, i) => {
+      if (phrase !== "undefined") {
+        const textGeo = new THREE.TextGeometry(phrase, {
+          font: font,
+          size: 30,
+          height: 0.5,
+          curveSegments: 12,
+        })
 
-      //   let textMat = new THREE.MeshNormalMaterial()
-      //   let textMesh = new THREE.Mesh(textGeo, textMat)
-      //   scene.add(textMesh)
-      textGeo.center()
-
-      posList[i] = GeometryUtils.randomPointsInGeometry(textGeo, particleCount)
+        textGeo.center()
+        posList[i] = GeometryUtils.randomPointsInGeometry(
+          textGeo,
+          particleCount
+        )
+      }
     })
+    return posList
   }
 
   function Shard() {
-    this.randRotX = Math.random() * 0.01
-    this.randRotY = Math.random() * 0.01
+    this.randRotX = Math.random() * 0.022
+    this.randRotY = Math.random() * 0.018
   }
 
   Shard.prototype.init = function (i) {
     let shardObject = new THREE.Object3D()
 
-    const shardGeo = new THREE.SphereGeometry(0.5, 3, 3)
+    const shardGeo = new THREE.SphereGeometry(1, 3, 3)
     const shardMat = new THREE.MeshBasicMaterial({
       color: shardColors[i % shardColors.length],
     })
     const shardMesh = new THREE.Mesh(shardGeo, shardMat)
 
     const pos = randomPointsInSphere[i]
-    // const pos = posList[0][i];
     shardObject.position.set(pos.x, pos.y, pos.z)
 
     for (var j = 0; j < shardMesh.geometry.vertices.length; j++) {
-      shardMesh.geometry.vertices[j].x += -2 + Math.random() * 2
-      shardMesh.geometry.vertices[j].y += -2 + Math.random() * 2
-      shardMesh.geometry.vertices[j].z += -2 + Math.random() * 2
+      shardMesh.geometry.vertices[j].x += -2 + Math.random() * 3
+      shardMesh.geometry.vertices[j].y += -2 + Math.random() * 3
+      shardMesh.geometry.vertices[j].z += -2 + Math.random() * 3
     }
 
     shardObject.add(shardMesh)
@@ -150,14 +169,15 @@ const Visualization = () => {
       x: pos.x,
       y: pos.y,
       z: pos.z,
+      delay: 1,
     })
     tl.to(this.shardObject.position, {
-      duration: 6,
+      duration: 4.5,
       ease: "expo.out",
       x: randPos.x,
       y: randPos.y,
       z: randPos.z,
-      delay: 4,
+      delay: 3,
     })
   }
 
@@ -180,16 +200,11 @@ const Visualization = () => {
     for (var i = 0; i < particles.length; i++) {
       particles[i].updatePosition(i)
     }
-
-    setInterval(() => {
-      updateParticles()
-    }, 14500)
   }
 
   function switchPhrase() {
     counter++
-    numText = counter % phrases.length
-    console.log("numText: " + numText)
+    numText = counter % posList.length
   }
 
   function animate() {
@@ -199,11 +214,9 @@ const Visualization = () => {
       particles[i].updateRotation()
     }
 
-    // controls.update()
     renderer.render(scene, camera)
   }
 
   return <div className="visualization"></div>
 }
-
 export default Visualization

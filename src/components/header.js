@@ -17,7 +17,7 @@ const Header = ({ siteTitle, setMenuState, menuState }) => {
           <div className="logo">
             <h2>
               {" "}
-              <Link className="clr-orange no-decor-link" to="/">
+              <Link className="clr-red no-decor-link" to="/">
                 {siteTitle}
               </Link>
             </h2>

@@ -1,0 +1,54 @@
+.interview-intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.questions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question-block {
+  padding-bottom: 4em;
+  flex: 50%;
+}
+
+/*  audio file and img in a row */
+.img-audio-row {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+  padding-top: 0.5em;
+  align-items: center;
+}
+
+.imgInterviews {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 50%;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 550px) {
+  .interview-intro-right {
+    padding-left: 10em;
+  }
+
+  .img-audio-row {
+    width: 70%;
+
+    flex-direction: row;
+  }
+
+  .imgInterviews {
+    width: 100%;
+    margin: 0;
+    padding: 0em;
+  }
+  .audio-item {
+    padding-left: 1em;
+  }
+}
