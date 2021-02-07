@@ -25,12 +25,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.2.1",
-<<<<<<< HEAD
-    "three": "^0.124.0",
-    "three-js": "^79.0.0"
-=======
     "three": "^0.124.0"
->>>>>>> 0e46c0332e26f8672253c62ea5470fe930b1e334
   },
   "devDependencies": {
     "prettier": "2.1.2"
