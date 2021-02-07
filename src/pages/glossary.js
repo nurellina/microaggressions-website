@@ -2,30 +2,15 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/glossary-styles.css"
-import greenRight from "../images/greenRight.svg"
-import greenLeft from "../images/greenLeft.svg"
-import yellowBgShape from "../images/yellowBgShape.svg"
-import lilacBgShape from "../images/lilacBgShape.svg"
-import pinkBgShape from "../images/pinkBgShape.svg"
-// import { gsap } from 'gsap'
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import greenRight from "../images/glossary-imgs/greenRight.svg"
+import greenLeft from "../images/glossary-imgs/greenLeft.svg"
+import pinkBgShape from "../images/glossary-imgs/pinkBgShape.svg"
+import pinkBgShape2 from "../images/glossary-imgs/pinkBgShape2.svg"
+import lilacBgShape from "../images/glossary-imgs/lilacBgShape.svg"
+import blackBgShape from "../images/glossary-imgs/blackBgShape.svg"
+import blackBgShape2 from "../images/glossary-imgs/blackBgShape2.svg"
 
-// gsap.registerPlugin(ScrollTrigger);
 
-// gsap.to(".greenRightDiffh", {
-//   scrollTrigger: {
-//     trigger: ".greenRightDiffh",
-//     start: "top 90%",
-//     end: "top 100px",
-//     scrub: 1,
-//     markers: true, 
-
-//     // toggleActions: "restart pause reverse pause"
-
-//   },
-//   x: -500,
-//   duration: 2 
-// });
 
 const GlossaryPage = () => (
 
@@ -38,10 +23,11 @@ const GlossaryPage = () => (
 
 
             {/* Title */}
-            <h1 className="glossaryTitle-outline"> Glossary</h1>
-            <h1 className="glossaryTitle-outline"> Glossary</h1>
-            <h1 className="glossaryTitle"> Glossary</h1>
-
+            <div id="title">
+              <h1 className="glossaryTitle-outline"> Glossary</h1>
+              <h1 className="glossaryTitle-outline"> Glossary</h1>
+              <h1 className="glossaryTitle"> Glossary</h1>
+            </div>
             {/* Intro */}
             <p className="intro">
               Microaggressions do not exist in a vacuum, they are part of a bigger picture that spans a wide spectrum of oppressive power dynamics and structures.
@@ -103,11 +89,14 @@ const GlossaryPage = () => (
 
               {/* Cultural Racism*/}
               <div className="glossary-entry right">
+              <img src={blackBgShape} className="blackBgShape-first" alt="black shad as a background" />
+
                 <div id="cult-racism"
                   data-sal="fade"
                   data-sal-duration="1000"
                   data-sal-delay="300"
                   data-sal-easing="ease">
+
                   <h3>
                     Cultural Racism
                 </h3>
@@ -141,11 +130,16 @@ const GlossaryPage = () => (
 
               {/* Implicit Bias */}
               <div className="glossary-entry right">
-                <div id="yellow-background"> </div>
-                <img src={yellowBgShape} className="yellowBgShape" alt="Red shad as a background" />
-                <img src={yellowBgShape} className="yellowBgShape-first" alt="Red shad as a background" />
+                <img src={pinkBgShape2} className="pinkBgShape-second" alt="pink shad as a background" />
 
-                <p className="p-quote quote-implicit-bias">Intent vs.<div className="flicker">Impact</div></p>
+                <div id="pink-background"> </div>
+                <img src={pinkBgShape} className="pinkBgShape" alt="pink shad as a background" />
+                <img src={pinkBgShape} className="pinkBgShape-first" alt="pink shad as a background" />
+
+
+                <p className="p-quote quote-implicit-bias">
+                  Intent vs.<div className="flicker">Impact</div>
+                </p>
                 <div id="implicit-bias"
                   data-sal="fade"
                   data-sal-duration="1000"
@@ -196,8 +190,7 @@ const GlossaryPage = () => (
 
               {/* Tone Policing */}
               <div className="glossary-entry">
-                <img src={pinkBgShape} className="pinkBgShape-first" alt="Pink shad as a background" />
-                <img src={pinkBgShape} className="pinkBgShape-second" alt="Pink shad as a background" />
+                <img src={blackBgShape2} className="blackBgShape-second" alt="black shad as a background" />
 
                 <p className="p-quote quote-tone-policing glitch">You don't need to get so<div className="filled"> angry</div> </p>
                 <div id="tone-policing"

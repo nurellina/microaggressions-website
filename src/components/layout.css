@@ -31,6 +31,23 @@ section {
   padding: 1.5em 0;
   position: relative;
 }
+
+
+.hamburger-menu {
+  cursor: pointer;
+  display: block;
+}
+.hamburger-menu span {
+  height: 3px;
+  width: 30px;
+  margin: 6px;
+  display: block;
+  background: black;
+  margin-left: 100%;
+  /* background: $text; */
+}
+
+
 @media (min-width: 50rem) {
   article,
   section {

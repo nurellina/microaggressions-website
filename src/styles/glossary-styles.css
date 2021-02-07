@@ -8,6 +8,9 @@ body {
 }
 
 /* +++++++ TITLE +++++++ */
+#title{
+    margin-top: 0.8em;
+}
 .glossaryTitle-outline {
     text-align: center;
     margin: -0.7em;
@@ -57,6 +60,9 @@ body {
 .glossary p {
     max-width: 100%;
 }
+#implicit-bias, #gaslighting, #cult-racism, #tone-policing{
+    color: white;
+}
 
 /* +++++++ QUOTES +++++++ */
 .p-quote {
@@ -92,9 +98,13 @@ body {
     margin-bottom: 0;
 }
 
-.quote-tone-policing {
+.quote-tone-policing{
     font-size: 2em;
     text-align: left;
+    -webkit-text-stroke-color: white;
+ }
+.quote-tone-policing .filled{
+    -webkit-text-fill-color:white;
 }
 
 .glitch {
@@ -123,7 +133,7 @@ body {
     transform: scale(1.3);
 }
 
-.glossary .pinkBgShape-first {
+.glossary .blackBgShape-first {
     position: absolute;
     width: 140%;
     transform: scale(1.5);
@@ -144,7 +154,7 @@ body {
 }
 
 .glossary #lilac-background {
-    background: #E6E6FA;
+    background: #C8C7FC;
     position: absolute;
     visibility: visible;
     width: 120em;
@@ -154,9 +164,11 @@ body {
     z-index: -2;
     /* transform: rotate(4deg); */
 }
-
-.glossary #yellow-background {
-    background: #F0CA62;
+.glossary .pinkBgShape-second {
+    display: none;
+}
+.glossary #pink-background {
+    background: #F9ADB9;
     position: absolute;
     width: 100%;
     height: 45em;
@@ -165,7 +177,7 @@ body {
     z-index: -2;
 }
 
-.glossary .yellowBgShape, .glossary .yellowBgShape-first {
+.glossary .pinkBgShape, .glossary .pinkBgShape-first {
     position: absolute;
     width: 100%;
     top: 310em;
@@ -174,7 +186,7 @@ body {
     transform: rotate(180deg);
 }
 
-.glossary .yellowBgShape-first {
+.glossary .pinkBgShape-first {
     transform: rotate(360deg);
     top: 260em;
 }
@@ -187,11 +199,10 @@ body {
     z-index: -1;
 }
 
-.glossary .pinkBgShape-second {
+.glossary .blackBgShape-second {
     position: absolute;
-    width: 140%;
-    transform: scale(2);
-    left: 0;
+    width: 100%;
+    transform: scale(5);
     top: 446em;
     z-index: -2;
 }
@@ -203,6 +214,9 @@ body {
 /* +++++++ DESKTOP BEGIN +++++++ */
 
 @media (min-width: 70rem) {
+    #title{
+        margin-top: 2.5em;
+    }
     .glossaryTitle, .glossaryTitle-outline {
         font-size: 6em;
     }
@@ -233,15 +247,15 @@ body {
         top: 58em;
     }
     .quote-implicit-bias {
-        top: 56%;
-        font-size: 3em;
-        right: 40%;
+        top: 56.5%;
+        font-size: 3.4em;
+        right: 30%;
         text-align: right;
         white-space: nowrap;
         overflow: hidden;
         /* The typwriter cursor */
         border-right: .02em solid var(--clr-primary-200);
-        animation: typing 5s steps(40, end) infinite, blink-caret .75s step-end infinite;
+        animation: typing 4s steps(40, end) infinite, blink-caret .75s step-end infinite;
     }
     .quote-tone-policing {
         top: 112em;
@@ -256,16 +270,16 @@ body {
     .glossary .greenRightDiffh {
         width: 50%;
         top: 11%;
-        /* right: 0%; */
-        right: -40%;
+        right: -5%;
+        /* right: -40%; */
 
     }
     .glossary .greenLeftDiffh {
         width: 40%;
         top: 20%;
-        left: 0%;
+        left: -2%;
     }
-    .glossary .pinkBgShape-first{
+    .glossary .blackBgShape-first{
         transform: scale(0.8);
         left: 5em;
         top: 120em;
@@ -273,39 +287,57 @@ body {
     }
     .glossary #lilac-background{
         top: 170em;
+        height: 10%;
+        visibility: hidden;
     }
     .glossary .lilacBgShape-bottom {
-        top: 155em;
+        top: 155em; 
     }
-    .glossary #pink-background {
+    .glossary .lilacBgShape {
         visibility: hidden;
-        /* display: none; */
+    }
+    /* .glossary #pink-background {
+        visibility: hidden;
         width: 120em;
         height: 0;
         top: 30%;
         left: -10em;
-    }
-    .glossary .yellowBgShape-first {
+    } */
+    .glossary .pinkBgShape-first {
         top: 55%;
+        visibility: hidden;
+
     }
-    .glossary #yellow-background {
+    .glossary #pink-background {
         visibility: hidden;
     }
-    .glossary .yellowBgShape {
+    .glossary .pinkBgShape {
+        visibility: hidden;
+
         width: 100%;
         /* top: 210em; */
         top: 56%;
         right: 0%;
 
     }
+
+    .glossary .pinkBgShape-second {
+        position: absolute;
+        z-index: -2;
+        display:block;
+        top: 55%;
+        left: 0;
+    }
+
     .glossary .greenLeftDiff-second {
         width: 40%;
         top: 290em;
         left: 0%;
     }
-    .glossary .pinkBgShape-second{
-        top: 85%;
-        transform: scaleY(0.6);
+    .glossary .blackBgShape-second{
+        top: 89%;
+        left: 0;
+        transform: scale(1);
     }
 }
 

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Home",
+    "id": "",
+    "leftLineFlex": 1,
+    "rightLineFlex": 1,
+    "offset": 200,
+    "src": 1
+  },
+  {
+    "title": "Glossary",
+    "id": "glossary",
+    "leftLineFlex": 3,
+    "rightLineFlex": 1,
+    "offset": -500,
+    "src": 2
+  },
+  {
+    "title": "Installation",
+    "id": "installation",
+    "leftLineFlex": 1,
+    "rightLineFlex": 3,
+    "offset": 300,
+    "src": 3
+  }
+]
