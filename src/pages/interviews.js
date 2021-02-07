@@ -15,7 +15,7 @@ const InterviewPage = () => (
     <section>
       <div className="container interview-intro">
         <div className="interview-intro-left">
-          <h1 className="clr-orange">Interviews</h1>
+          <h1 className="clr-red">Interviews</h1>
           <p>
             Here you can find several Interviews to give you a better idea of
             <span className="ff-accent"> what it feels like </span>to experience

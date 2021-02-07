@@ -24,11 +24,11 @@ const Vote = () => {
               </div>
             </div>
             <div className="feel-you">
-              <p className="clr-orange ff-accent margin-bottom">
+              <p className="clr-red ff-accent margin-bottom">
                 {" "}
                 Oh, we feel you{" "}
               </p>
-              <p className="clr-orange">
+              <p className="clr-red">
                 By the way 71% of people answered YES.
                 <br />
                 Which is quite a big amount...
