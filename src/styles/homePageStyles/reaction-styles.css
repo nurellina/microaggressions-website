@@ -4,6 +4,7 @@
   /* background-image: url("../../images/salmonBgShape.svg"); */
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 2em;
   /*padding-top: 0rem;*/
 }
 
@@ -31,27 +32,8 @@
   transform: translateX(-50%);
   text-align: center;
 }
-.shape1 {
-  width: 27em;
-  height: 13em;
-  background-image: url("../../images/blob-2.svg");
-  background-repeat: no-repeat;
-  position: relative;
-  left: 50%;
-  transform: translateX(-40%);
-}
-@media (min-width: 70rem) {
-  .shape1 {
-    width: 30em;
-    height: 15em;
-  }
-}
-.shape1Txt {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
+.shapeText{
+    text-align: center;
 }
 .shape2 {
   width: 9em;
