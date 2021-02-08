@@ -24,27 +24,14 @@
   flex: 1;
   align-items: center;
 }
-
-.allign-hcenter {
-  /*center text horizontally*/
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-.shapeText{
-    text-align: center;
-}
 .shape2 {
-  width: 9em;
-  height: 5em;
-  background-image: url("../../images/blob.svg");
-  background-repeat: no-repeat;
-  top: 50%;
+  width: 8em;
+  height: 4em;
 }
-.shape2Txt {
-  position: relative;
-  text-align: center;
-  top: 40%;
-  left: -10%;
+
+@media only screen and (min-width: 961px) {
+  .shape2 {
+    width: 10em;
+    height: 5em;
+  }
 }
