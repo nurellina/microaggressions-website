@@ -28,11 +28,11 @@ const InterviewPage = () => (
           </p>
         </div>
         <div className="interview-intro-right">
-          {/* <img
+          <img
             src={interviewcover}
             className="imgInterviews"
             alt="interviewcover"
-          /> */}
+          />
         </div>
       </div>
 
