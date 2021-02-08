@@ -30,7 +30,7 @@ const InterviewPage = () => (
         <div className="interview-intro-right">
           <img
             src={interviewcover}
-            className="imgInterviews"
+            className="intro-img"
             alt="interviewcover"
           />
         </div>
