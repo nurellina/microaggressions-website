@@ -11,7 +11,7 @@ const font = new THREE.Font(helvetica)
 
 // PARTICLE VARIABLES
 let particleCount = 2200
-let shardColors = ["#212121", "#080808", "#262626", "#6b1010", "#6e2d2d"]
+let shardColors = ["#212121", "#080808", "#171717", "#303030"]
 let particles = []
 let randomPointsInSphere = []
 let counter = 0
@@ -118,7 +118,7 @@ const Visualization = ({ phrases }) => {
           font: font,
           size: 30,
           height: 0.5,
-          curveSegments: 12,
+          curveSegments: 10,
         })
 
         textGeo.center()
