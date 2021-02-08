@@ -6,7 +6,7 @@ import "../styles/interviews-styles.css"
 
 import lina from "../images/interviews-imgs/02-4_character-portrait-round.png"
 import julian from "../images/interviews-imgs/02-2_character-portrait-round.png"
-import fannie from "../images/interviews-imgs/02-3_character-portrait-round.png"
+import aluel from "../images/interviews-imgs/02-3_character-portrait-round.png"
 import interviewcover from "../images/interviews-imgs/01_character-interviews-test.png"
 
 const InterviewPage = () => (
@@ -70,9 +70,21 @@ const InterviewPage = () => (
               </div>
             </div>
             <div className="img-audio-row">
+              {/* Aluel */}
+              <div className="img-item">
+                <img src={aluel} className="imgInterviews" alt="aluel_img" />
+              </div>
+              <div className="audio-item">
+                <ReactAudioPlayer
+                  src="http://docs.google.com/uc?export=open&id=1wSvmSpFdp9NO3xbntZFfj44haLBHB67D"
+                  controls
+                />
+              </div>
+            </div>
+            <div className="img-audio-row">
               {/* Julian */}
               <div className="img-item">
-                <img src={fannie} className="imgInterviews" alt="julian_img" />
+                <img src={julian} className="imgInterviews" alt="julian_img" />
               </div>
               <div className="audio-item">
                 <ReactAudioPlayer
@@ -87,18 +99,6 @@ const InterviewPage = () => (
               Do you have specific examples of experiencing microaggressions?
             </p>
             <div className="img-audio-row">
-              {/* Lina */}
-              <div className="img-item">
-                <img src={lina} className="imgInterviews" alt="lina_img" />
-              </div>
-              <div className="audio-item">
-                <ReactAudioPlayer
-                  src="http://docs.google.com/uc?export=open&id=1KTglCSxnVzHidfFM7iqRkZb6BjI6mkvS"
-                  controls
-                />
-              </div>
-            </div>
-            <div className="img-audio-row">
               {/* Julian */}
               <div className="img-item">
                 <img src={julian} className="imgInterviews" alt="julian_img" />
@@ -106,6 +106,18 @@ const InterviewPage = () => (
               <div className="audio-item">
                 <ReactAudioPlayer
                   src="http://docs.google.com/uc?export=open&id=1Z7m-MtbS47GdmtgqKgbRwWNXLMGveTGh"
+                  controls
+                />
+              </div>
+            </div>
+            <div className="img-audio-row">
+              {/* Lina */}
+              <div className="img-item">
+                <img src={lina} className="imgInterviews" alt="lina_img" />
+              </div>
+              <div className="audio-item">
+                <ReactAudioPlayer
+                  src="http://docs.google.com/uc?export=open&id=1KTglCSxnVzHidfFM7iqRkZb6BjI6mkvS"
                   controls
                 />
               </div>
@@ -127,11 +139,36 @@ const InterviewPage = () => (
                 />
               </div>
             </div>
+
+            <div className="img-audio-row">
+              {/* Aluel */}
+              <div className="img-item">
+                <img src={aluel} className="imgInterviews" alt="aluel_img" />
+              </div>
+              <div className="audio-item">
+                <ReactAudioPlayer
+                  src="http://docs.google.com/uc?export=open&id=12qb3VGlse6LpsC2t9WJNQsA-hdDqXIbY"
+                  controls
+                />
+              </div>
+            </div>
           </div>
           <div className="question-block">
             <p className="ff-accent clr-white">
               How can non marginalised people be allies and help?
             </p>
+            <div className="img-audio-row">
+              {/* Aluel */}
+              <div className="img-item">
+                <img src={aluel} className="imgInterviews" alt="aluel_img" />
+              </div>
+              <div className="audio-item">
+                <ReactAudioPlayer
+                  src="http://docs.google.com/uc?export=open&id=1J-S-YxXRTXR8gerMlFTVVeUgzFTeYFrk"
+                  controls
+                />
+              </div>
+            </div>
             <div className="img-audio-row">
               {/* Lina */}
               <div className="img-item">
