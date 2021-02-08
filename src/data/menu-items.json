@@ -22,5 +22,13 @@
     "rightLineFlex": 3,
     "offset": 300,
     "src": 3
+  },
+  {
+    "title": "Installation",
+    "id": "installation",
+    "leftLineFlex": 3,
+    "rightLineFlex": 1,
+    "offset": 300,
+    "src": 3
   }
 ]

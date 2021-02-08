@@ -6,7 +6,7 @@
   text-align: center;
   margin: -0.7em;
   font-size: 3.5em;
-  color: black;
+  /* color: black; */
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
@@ -16,6 +16,7 @@
   text-align: center;
   margin: -0.5em;
   font-size: 3.5em;
+  color: var(--clr-primary-200);
 }
 
 /* +++++++ INTRO +++++++ */
@@ -47,7 +48,9 @@
   letter-spacing: 0.05em;
   color: var(--clr-primary-200);
 }
-
+#implicit-bias h3{
+  color: white;
+}
 .glossary p {
   max-width: 100%;
 }
@@ -86,10 +89,12 @@
 }
 
 .quote-implicit-bias {
-  font-size: 4em;
+  font-size: 2.5em;
   width: 100%;
   text-align: left;
   margin-bottom: 0;
+  -webkit-text-stroke-color: black;
+
 }
 
 .quote-tone-policing {
@@ -163,10 +168,11 @@
   display: none;
 }
 .glossary #pink-background {
-  background: #f9adb9;
+  /* background: #f9adb9; */
+  background: red;
   position: absolute;
   width: 100%;
-  height: 45em;
+  height: 43em;
   top: 270em;
   left: 0;
   z-index: -2;
@@ -176,7 +182,7 @@
 .glossary .pinkBgShape-first {
   position: absolute;
   width: 100%;
-  top: 310em;
+  top: 303em;
   right: 0%;
   z-index: -1;
   transform: rotate(180deg);
@@ -199,7 +205,7 @@
   position: absolute;
   width: 100%;
   transform: scale(5);
-  top: 446em;
+  top: 440em;
   z-index: -2;
 }
 
@@ -239,12 +245,12 @@
     top: 32em;
   }
   .quote-gaslighting {
-    top: 58em;
+    top: 60em;
   }
   .quote-implicit-bias {
     top: 56.5%;
     font-size: 3.4em;
-    right: 30%;
+    right: 10%;
     text-align: right;
     white-space: nowrap;
     overflow: hidden;
@@ -254,7 +260,7 @@
       blink-caret 0.75s step-end infinite;
   }
   .quote-tone-policing {
-    top: 112em;
+    top: 114em;
   }
   .flicker {
     animation: none;
@@ -264,20 +270,19 @@
   /* +++++++ DESKTOP SHAPES +++++++ */
 
   .glossary .greenRightDiffh {
-    width: 50%;
-    top: 11%;
-    right: -5%;
+    width: 70%;
+    top: 19.6%;
+    right: 0%;
     /* right: -40%; */
   }
   .glossary .greenLeftDiffh {
-    width: 40%;
-    top: 20%;
+    width: 60%;
+    top: 11.5%;
     left: -2%;
   }
   .glossary .blackBgShape-first {
-    transform: scale(0.8);
-    left: 5em;
-    top: 120em;
+    transform: scale(1);
+    top: 133em;
     z-index: -3;
   }
   .glossary #lilac-background {
@@ -286,7 +291,7 @@
     visibility: hidden;
   }
   .glossary .lilacBgShape-bottom {
-    top: 155em;
+    top: 158em;
   }
   .glossary .lilacBgShape {
     visibility: hidden;

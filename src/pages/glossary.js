@@ -35,8 +35,8 @@ const GlossaryPage = () => (
           {/* Ally */}
           <div className="glossary-entry">
             <img
-              src={greenRight}
-              className="greenRightDiffh"
+              src={greenLeft}
+              className="greenLeftDiffh"
               alt="Green Shad on the right"
             />
             <div
@@ -66,8 +66,8 @@ const GlossaryPage = () => (
           {/* Color Blindness */}
           <div className="glossary-entry right">
             <img
-              src={greenLeft}
-              className="greenLeftDiffh"
+              src={greenRight}
+              className="greenRightDiffh"
               alt="Green Shad on the left"
             />
             <div
