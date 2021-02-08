@@ -3,14 +3,16 @@
 import React from "react"
 import "../../styles/homePageStyles/reaction-styles.css"
 import blobShape from "../../images/blob-2.svg"
-
+import question from "../../images/isitsomebodywithcapacity.png"
+import yes from "../../images/yes_red.png"
+import no from "../../images/no_red.png"
 const Reaction = () => {
   return (
     <div>
       {" "}
       <article className="reaction bg-salmon">
         <div className="container">
-          <h1 className="clr-white">
+          <h1 className="clr-red">
             {" "}
             How can people who are affected by microagressions react?{" "}
           </h1>
@@ -19,28 +21,23 @@ const Reaction = () => {
             If you find yourself in a situation in which you are confronted by
             microaggressions, such like a difficult dialogue:
           </p>
-          <p className="ff-accent allign-hcenter">
+          <p className="ff-accent">
             {" "}
             First, think about whether or not it is worth continuing to talk to
             that person
           </p>
-          <div className="shapeTextWrapper">
-              <img src={blobShape} alt="blob background" className=" shapeImage"/>
-            <p className="clr-orange shapeText">
-              {" "}
-              Is this somebody who you think would actually have the capacity to
-              hear what you have to say?
-            </p>
+          <div>
+              <img src={question} alt="question shard" className=" shapeImage"/>
           </div>
           <div className="split-r">
             <div className="column-r">
               <div className="shape2">
-                <p className="clr-orange shape2Txt"> no.</p>
+              <img src={no} alt="no shard" className=" shapeImage"/>
               </div>
             </div>
             <div className="column-r">
               <div className="shape2">
-                <p className="clr-orange shape2Txt"> yes.</p>
+              <img src={yes} alt="yes shard" className=" shapeImage"/>
               </div>
             </div>
           </div>
