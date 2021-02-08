@@ -1,16 +1,19 @@
 /* SECTION: what are microagression? */
+
 .definition{
     margin-top: 0;
     padding-top: 0;
     background-color: var(--clr-primary-100);
     background-size: cover;
+
 }
 /*heading*/
-.heading{
-    position: absolute;
-    top: 0.5em;
-    left: 2rem;
+.heading {
+  position: absolute;
+  top: 0.5em;
+  left: 2rem;
 }
+
 .shapeImgTop{
     background-color: var(--clr-neutral-400);
 }
@@ -23,11 +26,12 @@
     margin-bottom: 0;
     z-index: 1;
     font-size: 3vw;
+
 }
 /*firt text in first shard*/
-#shapeTextTop{
-    right: 20%;
-    top: 50%;
+#shapeTextTop {
+  right: 20%;
+  top: 50%;
 }
 @media only screen and (min-width: 961px) {
     .shapeText2 {
@@ -41,11 +45,13 @@
     .shapeImgTop{
         background:none !important;
     }
+
 }
 /*hide text in responsive version*/
-#longTxt{
-    display: none;
+#longTxt {
+  display: none;
 }
+
 .def3{
     position: absolute;
     top: 20%;

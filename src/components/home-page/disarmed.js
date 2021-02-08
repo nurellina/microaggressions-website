@@ -5,7 +5,7 @@ import disarm1 from "../../images/disarm1.png"
 import disarm2 from "../../images/disarm2.png"
 import disarm3 from "../../images/disarm3.png"
 import disarm4 from "../../images/disarm4.png"
-import img from "../../images/img.png"
+import img from "../../images/disarmed/illus1.png"
 
 const Disarmed = () => {
   return (
@@ -13,7 +13,7 @@ const Disarmed = () => {
       <article className="disarmed">
         <div className="container">
           <h1 className="clr-red">How can microagressions be disarmed</h1>
-          <p className="ff-accent clr-green"> THE PROBLEM: </p>
+          <p className="ff-accent clr-purple"> THE PROBLEM: </p>
           <p>
             Calling someone out by pointing to the underlying homophobia, racism
             or sexism in their behaviours, oftentimes results in a very
@@ -21,7 +21,7 @@ const Disarmed = () => {
             impact of their actions. This is due to the underlying subconscious
             nature or implicit biases of microaggressions
           </p>
-          <p className="ff-accent clr-green">RATHER TRY TO COMMUNICATE: </p>
+          <p className="ff-accent clr-purple">RATHER TRY TO COMMUNICATE: </p>
         </div>
         <div className="stackedWrapper1">
           <div className="shapeTextWrapper">
@@ -50,12 +50,11 @@ const Disarmed = () => {
             <img src={disarm4} alt="green circle" className="shapeImage" />
           </div>
           <div className="container">
-            <img src={img} className="imgDisarmed" alt="disarmed" />
             <p>
               One principle underlying these statements is helping the aggressor
               understand she or he is not under attack for their comment.
             </p>
-            <p className="ff-accent clr-green">
+            <p className="ff-accent clr-purple">
               “If we want people to hear what we’re saying and potentially
               change their behavior, we have to think about things that will not
               immediately make them defensive,”

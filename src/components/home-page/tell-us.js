@@ -17,7 +17,7 @@ const TellUs = () => {
           </h2>
           <CreatePhrase />
         </div>
-        <div className="divider bg-red">
+        <div className="divider">
           <svg
             className="divider-svg"
             xmlns="http://www.w3.org/2000/svg"
@@ -26,8 +26,8 @@ const TellUs = () => {
           >
             <path
               className="shape-fill"
-              fillOpacity="1"
-              d="M0,64L720,192L1440,32L1440,320L720,320L0,320Z"
+              fill-opacity="1"
+              d="M0,192L480,224L960,128L1440,192L1440,320L960,320L480,320L0,320Z"
             ></path>
           </svg>
         </div>

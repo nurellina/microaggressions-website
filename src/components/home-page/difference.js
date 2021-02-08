@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
-import greenLeft from "../../images/greenLeft.svg"
-import greenRight from "../../images/greenRight.svg"
+import greenLeft from "../../images//difference/illus1.png"
+import greenRight from "../../images/difference/illus2.png"
 import "../../styles/homePageStyles/difference-styles.css"
 function FadeInWhenVisible({ children }) {
   const controls = useAnimation()
@@ -19,7 +19,7 @@ function FadeInWhenVisible({ children }) {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 2 }}
+      transition={{ duration: 1.2 }}
       variants={{
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0 },
@@ -34,21 +34,16 @@ const Difference = () => {
     <div>
       <article className="difference">
         <div className="container">
-          <img
-            src={greenRight}
-            className="greenRightDiff"
-            alt="Green Shad on the right"
-          />
-          <img
-            src={greenLeft}
-            className="greenLeftDiff"
-            alt="Green Shad on the left"
-          />
           <h1 className="clr-red">
             {" "}
             What makes microaggressions different from other rude or insensitive
             actions or comments?
           </h1>
+          <img
+            src={greenRight}
+            className="greenRightDiff"
+            alt="Green Shad on the right"
+          />
           <p>
             {" "}
             Microaggressions are more than just insults, insensitive comments,
@@ -71,6 +66,11 @@ const Difference = () => {
               <span className="word4"> in everyday life </span>
             </div>
           </FadeInWhenVisible>
+          <img
+            src={greenLeft}
+            className="greenLeftDiff"
+            alt="Green Shad on the left"
+          />
           <p className="diff-par-position">
             {" "}
             Oftentimes, people don't even realize that they're doing those sorts

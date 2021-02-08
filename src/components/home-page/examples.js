@@ -30,7 +30,7 @@ const Examples = () => {
 
   return (
     <div>
-      <article className="examples">
+      <article className="examples bg-pink">
         <motion.img
           className="shard ex__shard1"
           variants={variants}
@@ -108,20 +108,31 @@ const Examples = () => {
             Prof. Derald W. Sue demonstrates an example of microaggressions
             towards Asian Americans and Latin Americans, who are frequently
             complimented for{" "}
-            <span className="ff-accent clr-yellow">
-              {" "}
-              ‘speaking good English,’
-            </span>
+            <span className="ff-accent clr-red"> ‘speaking good English,’</span>
           </p>
           <p>
             {" "}
             But there is a hidden communication the target experiences: ‘You
             speak excellent English’ to the target says{" "}
-            <span className="ff-accent clr-yellow">
+            <span className="ff-accent clr-red">
               'You are not a true American. You're a perpetual alien in your own
               country'.
             </span>
           </p>
+        </div>
+        <div className="divider">
+          <svg
+            className="divider-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="none"
+          >
+            <path
+              className="shape-fill"
+              fillOpacity="1"
+              d="M0,192L480,224L960,64L1440,224L1440,320L960,320L480,320L0,320Z"
+            ></path>
+          </svg>
         </div>
       </article>
     </div>

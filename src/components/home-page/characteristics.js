@@ -11,17 +11,17 @@ import shard6 from "../../images/characteristics/shard_youareinvisible.png"
 import shard7 from "../../images/characteristics/shard_youarenotanindividual.png"
 import shard8 from "../../images/characteristics/shard_youdontbelong.png"
 
-import shard10 from "../../images/characteristics/shard_jamaica.png"
-import shard20 from "../../images/characteristics/shard_muchodiscounto.png"
+import shard20 from "../../images/characteristics/shard_muchodiscountopng.png"
 import shard30 from "../../images/characteristics/shard_professional.png"
-import shard40 from "../../images/characteristics/shard_whereareyoureallyfrom2.png"
+import shard10 from "../../images/characteristics/shard_whereareyoureallyfrom.png"
+import shard40 from "../../images/characteristics/shard_jamaica.png"
 
 const Characteristics = () => {
   return (
     <div>
       <article className="characteristics bg-purple">
         <div className="container">
-          <h1 className="clr-white">
+          <h1 className="clr-red">
             {" "}
             Common characteristics of Microaggressions{" "}
           </h1>
@@ -35,7 +35,7 @@ const Characteristics = () => {
             communicated by the sender of the microaggressions. Authors M.
             Barren and T. Jana have listed the following:
           </p>
-          <div className="grid-char">
+          <div className="grid-char margin-bottom">
             <img src={shard1} alt="inedequate" className="shapeImage" />
             <img src={shard2} alt="inedequate" className="shapeImage" />
             <img src={shard3} alt="inedequate" className="shapeImage" />
@@ -45,7 +45,7 @@ const Characteristics = () => {
             <img src={shard7} alt="inedequate" className="shapeImage" />
             <img src={shard8} alt="inedequate" className="shapeImage" />
           </div>
-          <p>
+          <p className="ff-accent clr-red">
             In many cases, Microaggressions are committed by people who are
             trying to be good people.
           </p>{" "}
