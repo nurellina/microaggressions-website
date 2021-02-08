@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
-import greenLeft from "../../images/greenLeft.svg"
-import greenRight from "../../images/greenRight.svg"
+import greenLeft from "../../images//difference/illus1.png"
+import greenRight from "../../images/difference/illus2.png"
 import "../../styles/homePageStyles/difference-styles.css"
 function FadeInWhenVisible({ children }) {
   const controls = useAnimation()
