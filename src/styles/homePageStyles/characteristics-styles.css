@@ -2,6 +2,9 @@
 .characteristics .shape-fill {
   fill: var(--clr-primary-400);
 }
+.characteristics .margin-bottom {
+  margin-bottom: 5rem;
+}
 @media only screen and (min-width: 961px) {
   .grid-char {
     display: grid;

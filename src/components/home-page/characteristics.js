@@ -21,7 +21,7 @@ const Characteristics = () => {
     <div>
       <article className="characteristics bg-purple">
         <div className="container">
-          <h1 className="clr-white">
+          <h1 className="clr-red">
             {" "}
             Common characteristics of Microaggressions{" "}
           </h1>
@@ -35,7 +35,7 @@ const Characteristics = () => {
             communicated by the sender of the microaggressions. Authors M.
             Barren and T. Jana have listed the following:
           </p>
-          <div className="grid-char">
+          <div className="grid-char margin-bottom">
             <img src={shard1} alt="inedequate" className="shapeImage" />
             <img src={shard2} alt="inedequate" className="shapeImage" />
             <img src={shard3} alt="inedequate" className="shapeImage" />
@@ -45,7 +45,7 @@ const Characteristics = () => {
             <img src={shard7} alt="inedequate" className="shapeImage" />
             <img src={shard8} alt="inedequate" className="shapeImage" />
           </div>
-          <p>
+          <p className="ff-accent clr-red">
             In many cases, Microaggressions are committed by people who are
             trying to be good people.
           </p>{" "}

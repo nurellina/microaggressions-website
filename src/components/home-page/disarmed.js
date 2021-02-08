@@ -13,7 +13,7 @@ const Disarmed = () => {
       <article className="disarmed">
         <div className="container">
           <h1 className="clr-red">How can microagressions be disarmed</h1>
-          <p className="ff-accent clr-green"> THE PROBLEM: </p>
+          <p className="ff-accent clr-purple"> THE PROBLEM: </p>
           <p>
             Calling someone out by pointing to the underlying homophobia, racism
             or sexism in their behaviours, oftentimes results in a very
@@ -21,7 +21,7 @@ const Disarmed = () => {
             impact of their actions. This is due to the underlying subconscious
             nature or implicit biases of microaggressions
           </p>
-          <p className="ff-accent clr-green">RATHER TRY TO COMMUNICATE: </p>
+          <p className="ff-accent clr-purple">RATHER TRY TO COMMUNICATE: </p>
         </div>
         <div className="stackedWrapper1">
           <div className="shapeTextWrapper">
@@ -55,7 +55,7 @@ const Disarmed = () => {
               One principle underlying these statements is helping the aggressor
               understand she or he is not under attack for their comment.
             </p>
-            <p className="ff-accent clr-green">
+            <p className="ff-accent clr-purple">
               “If we want people to hear what we’re saying and potentially
               change their behavior, we have to think about things that will not
               immediately make them defensive,”
