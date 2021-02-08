@@ -106,25 +106,3 @@
 .pure-material-button-outlined:hover:focus::before {
   opacity: 0.16;
 }
-
-/* Active */
-.pure-material-button-outlined:active::after {
-  opacity: 0.16;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0s;
-}
-
-/* Disabled */
-.pure-material-button-outlined:disabled {
-  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
-  background-color: transparent;
-  cursor: initial;
-}
-
-.pure-material-button-outlined:disabled::before {
-  opacity: 0;
-}
-
-.pure-material-button-outlined:disabled::after {
-  opacity: 0;
-}
