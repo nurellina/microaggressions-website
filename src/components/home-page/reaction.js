@@ -2,6 +2,7 @@
 
 import React from "react"
 import "../../styles/homePageStyles/reaction-styles.css"
+import blobShape from "../../images/blob-2.svg"
 
 const Reaction = () => {
   return (
@@ -23,8 +24,9 @@ const Reaction = () => {
             First, think about whether or not it is worth continuing to talk to
             that person
           </p>
-          <div className="shape1">
-            <p className="clr-orange shape1Txt">
+          <div className="shapeTextWrapper">
+              <img src={blobShape} alt="blob background" className=" shapeImage"/>
+            <p className="clr-orange shapeText">
               {" "}
               Is this somebody who you think would actually have the capacity to
               hear what you have to say?
