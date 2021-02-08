@@ -6,27 +6,27 @@ import "../../styles/homePageStyles/forms-styles.css"
 const Forms = () => {
   return (
     <div>
-      <article className="forms">
+      <article className="forms bg-dark clr-white">
         <div className="container">
-          <h1 className="clr-salmon">Other forms of Microaggressions</h1>
+          <h1 className="clr-purple">Other forms of Microaggressions</h1>
           <p>
-            <span className="ff-accent"> Microassaults </span> are the most
-            overt microaggressions. With microassaults, the person committing
-            the microaggression acted intentionally and knew their behavior
-            might be hurtful. For example, using a derogatory term to refer to a
-            person of color would be a microassault.
+            <span className="ff-accent clr-red"> Microassaults </span> are the
+            most overt microaggressions. With microassaults, the person
+            committing the microaggression acted intentionally and knew their
+            behavior might be hurtful. For example, using a derogatory term to
+            refer to a person of color would be a microassault.
           </p>
           <p>
-            <span className="ff-accent"> Microinsults </span>are more subtle
-            than microassaults, but nevertheless have harmful effects on
+            <span className="ff-accent clr-red"> Microinsults </span>are more
+            subtle than microassaults, but nevertheless have harmful effects on
             marginalized group members. For example, Sue et al. write, a
             microinsult could involve a comment implying that a woman or person
             of color received their job due to affirmative action.
           </p>
           <p>
-            <span className="ff-accent"> Microinvalidations </span> are comments
-            and behaviors that deny the experiences of marginalized group
-            members. One common microaggression involves insisting that
+            <span className="ff-accent clr-red"> Microinvalidations </span> are
+            comments and behaviors that deny the experiences of marginalized
+            group members. One common microaggression involves insisting that
             prejudice is no longer a problem in society: Derald Wing Sue et al.
             write that a microinvalidation could involve telling a person of
             color that they are being “oversensitive” to a racist comment that

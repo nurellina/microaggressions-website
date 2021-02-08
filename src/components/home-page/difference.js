@@ -44,7 +44,7 @@ const Difference = () => {
             className="greenLeftDiff"
             alt="Green Shad on the left"
           />
-          <h1>
+          <h1 className="clr-red">
             {" "}
             What makes microaggressions different from other rude or insensitive
             actions or comments?
