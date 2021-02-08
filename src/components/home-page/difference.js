@@ -34,21 +34,16 @@ const Difference = () => {
     <div>
       <article className="difference">
         <div className="container">
-          <img
-            src={greenRight}
-            className="greenRightDiff"
-            alt="Green Shad on the right"
-          />
-          <img
-            src={greenLeft}
-            className="greenLeftDiff"
-            alt="Green Shad on the left"
-          />
           <h1 className="clr-red">
             {" "}
             What makes microaggressions different from other rude or insensitive
             actions or comments?
           </h1>
+          <img
+            src={greenRight}
+            className="greenRightDiff"
+            alt="Green Shad on the right"
+          />
           <p>
             {" "}
             Microaggressions are more than just insults, insensitive comments,
@@ -71,6 +66,11 @@ const Difference = () => {
               <span className="word4"> in everyday life </span>
             </div>
           </FadeInWhenVisible>
+          <img
+            src={greenLeft}
+            className="greenLeftDiff"
+            alt="Green Shad on the left"
+          />
           <p className="diff-par-position">
             {" "}
             Oftentimes, people don't even realize that they're doing those sorts

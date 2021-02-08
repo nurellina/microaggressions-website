@@ -38,6 +38,15 @@
   top: 150px;
   left: 3rem;
 }
+@media only screen and (min-width: 768px) {
+  .stackedWrapper1 {
+    height: 900px;
+  }
+  .stackedWrapper1 .container {
+    top: 400px;
+    right: -200px;
+  }
+}
 @media only screen and (min-width: 961px) {
   .stackedWrapper1 {
     height: 1300px;

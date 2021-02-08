@@ -1,107 +1,106 @@
 /* SECTION: what are microagression? */
-.definition{
-    margin-top: 0;
-    padding-top: 0;
-    background-image: url(../../images/bgImage.jpeg);
-    background-size: cover;
+.definition {
+  margin-top: 0;
+  padding-top: 0;
+  background-image: url(../../images/bgImage.jpeg);
+  background-size: cover;
 }
 /*heading*/
-.heading{
-    position: absolute;
-    top: 0.5em;
-    left: 2rem;
+.heading {
+  position: absolute;
+  top: 0.5em;
+  left: 2rem;
 }
 
-/*text in shard*/  
+/*text in shard*/
 .shapeText2 {
-    position: absolute;
-    left: 2rem;
-    top: 17%;
-    right: 30%;
-    margin-bottom: 0;
-    z-index: 1;
-    font-size: 3vw;
+  position: absolute;
+  left: 2rem;
+  top: 17%;
+  right: 30%;
+  margin-bottom: 0;
+  z-index: 1;
+  font-size: 3vw;
 }
 /*firt text in first shard*/
-#shapeTextTop{
-    right: 20%;
-    top: 50%;
+#shapeTextTop {
+  right: 20%;
+  top: 50%;
 }
 @media only screen and (min-width: 961px) {
-
-    .shapeText2 {
-        top: 25%;
-        left: 6rem;
-        font-size: 1.2rem;
-    }  
-    .heading{
-        left: 6rem;
-    }
+  .shapeText2 {
+    top: 25%;
+    left: 6rem;
+    font-size: 1.2rem;
+  }
+  .heading {
+    left: 6rem;
+  }
 }
-.shapeImgTop{
-    background-color: var(--clr-neutral-900);
+.shapeImgTop {
+  background-color: var(--clr-neutral-900);
 }
 /*black shards*/
-.shapeImg1{
-    width: 75%;
-    z-index: 1;
+.shapeImg1 {
+  width: 75%;
+  z-index: 1;
 }
 @media only screen and (min-width: 961px) {
-    .shapeImgTop{
-        background:none !important;
-    }
-    .shapeImg1{
-        width: 65%;
-    }
+  .shapeImgTop {
+    background: none !important;
+  }
+  .shapeImg1 {
+    width: 65%;
+  }
 }
 /*hide text in responsive version*/
-#longTxt{
-    display: none;
+#longTxt {
+  display: none;
 }
-#shortTxt{
-    display: block;
+#shortTxt {
+  display: block;
 }
-#def3{
-    visibility: hidden;
+#def3 {
+  visibility: hidden;
 }
 @media only screen and (min-width: 961px) {
-    /*show text in desktop version*/
-    #longTxt{
-        display: block;
-    }
-    #shortTxt{
-        display: none;
-    }
-    #def3{
-        visibility: visible;
-        position: relative;
-        left: 30%;
-        padding-right: 75%;    
-    }
+  /*show text in desktop version*/
+  #longTxt {
+    display: block;
+  }
+  #shortTxt {
+    display: none;
+  }
+  #def3 {
+    visibility: visible;
+    position: relative;
+    left: 30%;
+    padding-right: 75%;
+  }
 }
-.def5{
-    background-color: #656565;
-    position: absolute;
-    top: 93.5%;
-    width: 100%;
+.def5 {
+  background-color: #656565;
+  position: absolute;
+  top: 93.5%;
+  width: 100%;
 }
-#lastTxt{
-    padding-top: 6%;
-    margin-left: 40%;
-    margin-bottom: 6%;
-    font-size: 3vw;
+#lastTxt {
+  padding-top: 6%;
+  margin-left: 40%;
+  margin-bottom: 6%;
+  font-size: 3vw;
 }
 /* some space at the end of the section */
-.space{
-    margin: 4rem;
+.space {
+  margin: 4rem;
 }
-  
+
 @media only screen and (min-width: 961px) {
-    .def5{
-        font-size: 1.5rem;
-    }
-    #lastTxt{
-        font-size: 1.2rem;
-        padding-top: 4%;
-    }
+  .def5 {
+    font-size: 1.5rem;
+  }
+  #lastTxt {
+    font-size: 1.2rem;
+    padding-top: 4%;
+  }
 }
