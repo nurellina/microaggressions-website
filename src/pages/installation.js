@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/installation-styles.css"
-import Vimeo from "@u-wave/react-vimeo"
 
 import ReactPlayer from "react-player/vimeo"
 
@@ -12,7 +11,7 @@ const InstallationPage = () => (
 
     <section>
       <div className="container">
-        <h1 className="clr-orange">Installation</h1>
+        <h1 className="clr-red">Installation</h1>
         <div className="split">
           <div className="split-left">
             <p>
