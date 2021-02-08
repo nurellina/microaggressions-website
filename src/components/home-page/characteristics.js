@@ -11,10 +11,10 @@ import shard6 from "../../images/characteristics/shard_youareinvisible.png"
 import shard7 from "../../images/characteristics/shard_youarenotanindividual.png"
 import shard8 from "../../images/characteristics/shard_youdontbelong.png"
 
-import shard10 from "../../images/characteristics/shard_jamaica.png"
-import shard20 from "../../images/characteristics/shard_muchodiscounto.png"
+import shard20 from "../../images/characteristics/shard_muchodiscountopng.png"
 import shard30 from "../../images/characteristics/shard_professional.png"
-import shard40 from "../../images/characteristics/shard_whereareyoureallyfrom2.png"
+import shard10 from "../../images/characteristics/shard_whereareyoureallyfrom.png"
+import shard40 from "../../images/characteristics/shard_jamaica.png"
 
 const Characteristics = () => {
   return (

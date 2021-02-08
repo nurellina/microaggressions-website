@@ -1,12 +1,9 @@
 /* SECTION: examples of microagressions? */
+.examples .shape-fill {
+  fill: var(--clr-primary-100);
+}
 
 .examples {
-  padding-bottom: 20%;
-  background: linear-gradient(
-    var(--clr-primary-100),
-    70%,
-    var(--clr-secondary-200) 30%
-  );
   position: relative;
 }
 .shard {

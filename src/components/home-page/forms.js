@@ -43,7 +43,7 @@ const Forms = () => {
             <path
               className="shape-fill"
               fill-opacity="1"
-              d="M0,96L720,32L1440,160L1440,320L720,320L0,320Z"
+              d="M0,192L480,224L960,128L1440,192L1440,320L960,320L480,320L0,320Z"
             ></path>
           </svg>
         </div>

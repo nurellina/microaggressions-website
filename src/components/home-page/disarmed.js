@@ -50,7 +50,6 @@ const Disarmed = () => {
             <img src={disarm4} alt="green circle" className="shapeImage" />
           </div>
           <div className="container">
-            <img src={img} className="imgDisarmed" alt="disarmed" />
             <p>
               One principle underlying these statements is helping the aggressor
               understand she or he is not under attack for their comment.
