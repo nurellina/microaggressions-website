@@ -1,12 +1,18 @@
 /* variables */
 :root {
   /* color scheme variables */
-  --clr-primary-200: #fd3a24;
-  --clr-primary-400: #fd0100;
-  --clr-neutral-100: #ffffff;
-  --clr-neutral-300: #fc9586;
-  --clr-neutral-400: #97dc8b;
-  --clr-neutral-900: #000000;
+
+  --clr-primary-100: #ffffff;
+  --clr-primary-200: #ff0000;
+  --clr-primary-300: #f9adb9;
+  --clr-primary-400: #000000;
+
+  --clr-secondary-100: #c8c7fc;
+  --clr-secondary-200: #ffd2fb;
+
+  --clr-neutral-100: #fbb53b;
+  --clr-neutral-200: #45caaf;
+
   /*fonts variables */
   --ff-primary: "Object Sans", sans-serif;
   --ff-accent: "Monument Extended Black", serif;
@@ -28,10 +34,7 @@ body {
 }
 article,
 section {
-  display: block;
   position: relative;
-  height: 100%;
-  width: 100%;
 }
 /* container with header&paragraph and margins on sides */
 .container {
@@ -43,7 +46,6 @@ section {
 h1 {
   font-family: var(--ff-accent);
   font-size: 1.3rem;
-  color: var(--clr-primary-400);
   margin: 1.2em 0;
 }
 p {
@@ -67,29 +69,44 @@ img {
   outline: none;
 }
 /* global styles: adding color to paragraph, bg or heading */
-.clr-salmon {
-  color: var(--clr-neutral-300);
+.clr-purple {
+  color: var(--clr-secondary-100);
 }
-.clr-orange {
+.clr-pink {
+  color: var(--clr-secondary-200);
+}
+.clr-red {
   color: var(--clr-primary-200);
 }
 .clr-white {
+  color: var(--clr-primary-100);
+}
+.clr-salmon {
+  color: var(--clr-primary-300);
+}
+.clr-yellow {
   color: var(--clr-neutral-100);
 }
+.clr-green {
+  color: var(--clr-neutral-200);
+}
 .clr-black {
-  color: var(--clr-neutral-900);
+  color: var(--clr-primary-400);
 }
 .bg-dark {
-  background-color: var(--clr-neutral-900);
-}
-.bg-red {
   background-color: var(--clr-primary-400);
 }
-.bg-salmon {
-  background-color: var(--clr-neutral-300);
+.bg-red {
+  background-color: var(--clr-primary-200);
 }
-.bg-green {
-  background-color: var(--clr-neutral-400);
+.bg-salmon {
+  background-color: var(--clr-primary-300);
+}
+.bg-purple {
+  background-color: var(--clr-secondary-100);
+}
+.bg-pink {
+  background-color: var(--clr-secondary-200);
 }
 /*  global styles: not link decoration*/
 .no-decor-link {
@@ -112,6 +129,7 @@ img {
 .split {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 /* Desktop Styles */
@@ -142,15 +160,14 @@ img {
 
 /* SVG shape dection divider */
 .divider {
-  bottom: 0;
+  position: relative;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
 .divider-svg {
-  position: relative;
-  display: block;
   width: calc(100% + 1.3px);
   height: 100px;
 }

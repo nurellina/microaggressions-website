@@ -3,9 +3,9 @@
 .examples {
   padding-bottom: 20%;
   background: linear-gradient(
-    var(--clr-neutral-100),
+    var(--clr-primary-100),
     70%,
-    var(--clr-neutral-400) 30%
+    var(--clr-secondary-200) 30%
   );
   position: relative;
 }
