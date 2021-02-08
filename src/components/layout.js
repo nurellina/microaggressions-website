@@ -5,12 +5,14 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, {useState, useEffect} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "../fonts/typography.css"
 import Header from "./header"
+import Menu from "./menu"
 import "./layout.css"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,9 +25,26 @@ const Layout = ({ children }) => {
     }
   `)
 
+  // State of our menu
+  const [menuState, setMenuState] = useState(false)
+
+  // Locking the body from scrolling when menu is opened
+  useEffect(() => {
+    menuState
+      ? document.body.classList.add("body-lock")
+      : document.body.classList.remove("body-lock")
+  }, [menuState])
+
   return (
     <>
+          <Menu 
+            menuState={menuState} 
+            setMenuState={setMenuState}
+          />
+
       <Header
+        setMenuState={setMenuState}
+        // menuState={menuState}
         siteTitle={
           data.site.siteMetadata?.title || `MicroProject about MicroAgressions`
         }
