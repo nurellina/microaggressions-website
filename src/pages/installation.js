@@ -4,6 +4,8 @@ import SEO from "../components/seo"
 import "../styles/installation-styles.css"
 import Vimeo from "@u-wave/react-vimeo"
 
+import ReactPlayer from "react-player/vimeo"
+
 const InstallationPage = () => (
   <Layout>
     <SEO title="Information about installation" />
@@ -35,19 +37,41 @@ const InstallationPage = () => (
               swarm-like visualization forming typically used micro-insults, and
               the subtle increasement of discomfort in the music and in the
               visuals. We ask our visitors to share their own experiences, and
-              contribute to our growing database of hurtful senten- ces, which
-              becomes part of our exhibition as well. Here you can find several
-              Interviews to give you a better idea of
+              contribute to our growing database of hurtful sentences, which
+              becomes part of our exhibition as well.
+            </p>
+            <p>
+              The installation will take place from the 21-25 July 2021 at the
+              Sehsüchte Film Festival.
             </p>
           </div>
         </div>
+      </div>
 
-        <Vimeo
-          className="vimeo-clip"
-          video="509402966"
-          color="ff0000"
-          showPortrait="0"
-        />
+      <div className="divider">
+        <svg
+          className="divider-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+        >
+          <path
+            className="shape-fill"
+            fillOpacity="1"
+            d="M0,224L480,160L960,224L1440,256L1440,320L960,320L480,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div className="installation bg-dark">
+        <div className="player-wrapper container bg-dark">
+          <ReactPlayer
+            className="react-player"
+            url="https://vimeo.com/509402966"
+            width="100%"
+            height="100%"
+          />
+        </div>
       </div>
     </section>
   </Layout>
