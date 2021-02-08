@@ -1,1 +1,22 @@
 /* SECTION: common characteristics? */
+.characteristics .shape-fill {
+  fill: var(--clr-primary-400);
+}
+@media only screen and (min-width: 961px) {
+  .grid-char {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . ."
+      ". . . .";
+  }
+  .grid-char2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . . .";
+  }
+}
