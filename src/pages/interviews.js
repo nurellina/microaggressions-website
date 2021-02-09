@@ -7,7 +7,7 @@ import "../styles/interviews-styles.css"
 import lina from "../images/interviews-imgs/02-4_character-portrait-round.png"
 import julian from "../images/interviews-imgs/02-2_character-portrait-round.png"
 import aluel from "../images/interviews-imgs/02-3_character-portrait-round.png"
-import interviewcover from "../images/interviews-imgs/01_character-interviews-test.png"
+import interviewcover from "../images/interviews-imgs/01_character-interview.png"
 
 const InterviewPage = () => (
   <Layout>

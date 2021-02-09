@@ -5,7 +5,7 @@ import disarm1 from "../../images/disarm1.png"
 import disarm2 from "../../images/disarm2.png"
 import disarm3 from "../../images/disarm3.png"
 import disarm4 from "../../images/disarm4.png"
-import img from "../../images/disarmed/illus1.png"
+import img from "../../images/disarmed/illus1_disarmed.png"
 
 const Disarmed = () => {
   return (
