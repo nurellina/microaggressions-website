@@ -6,7 +6,16 @@
 .fill-shape {
   fill: var(--clr-neutral-100);
 }
-
+.shapeImage1{
+  width: 8em;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+.no{
+  left:35%;
+  top:73%
+}
 @media only screen and (min-width: 961px) {
   .vote .split {
     flex-direction: row-reverse;
@@ -15,5 +24,8 @@
   .feel-you {
     margin-top: 20rem;
     margin-left: 10rem;
+  }
+  .question-to-you > *{
+    width: 40em;
   }
 }

@@ -2,7 +2,9 @@
 
 import React from "react"
 import "../../styles/homePageStyles/vote-styles.css"
-import orangeRightHeader from "../../images/orangeRightHeader.svg"
+import question from "../../images/shard_wereyoueveroffended.png"
+import yes from "../../images/yes_red.png"
+import no from "../../images/no_red.png"
 
 const Vote = () => {
   return (
@@ -12,15 +14,13 @@ const Vote = () => {
           <div className="split">
             <div className="question-to-you">
               <div className="shapeTextWrapper">
-                <img
-                  src={orangeRightHeader}
-                  alt="orange shape"
-                  className="shapeImage"
-                />
-                <p className="shapeText ff-accent">
-                  {" "}
-                  Were you ever offended by any of these questions?{" "}
-                </p>
+                <img src={question} alt="question shard" className="shapeImage"/>
+                <div className="vote-input1">
+                  <img src={yes} alt="yes shard" className="shapeImage1"/>
+                </div>
+                <div className="vote-input2">
+                  <img src={no} alt="no shard" className="shapeImage1 no"/>
+                </div>
               </div>
             </div>
             <div className="feel-you">
