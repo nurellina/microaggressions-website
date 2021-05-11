@@ -12,17 +12,13 @@
   z-index: 1000;
   position: absolute;
   color: black;
-  top: 3rem;
-  right: 5.8rem;
+  top: 30px;
+  right: 40px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   cursor: pointer;
-}
-
-svg {
-  height: 30px;
 }
 
 .menu-title {

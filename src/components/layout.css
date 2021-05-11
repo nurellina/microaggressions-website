@@ -39,20 +39,6 @@ section {
   position: relative;
 }
 
-.hamburger-menu {
-  cursor: pointer;
-  display: block;
-}
-.hamburger-menu span {
-  height: 3px;
-  width: 30px;
-  margin: 6px;
-  display: block;
-  background: black;
-  margin-left: 100%;
-  /* background: $text; */
-}
-
 @media (min-width: 50rem) {
   .glossary {
     padding: 3em 0;
@@ -174,10 +160,32 @@ img {
 }
 
 /* SECTION: header */
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-menu {
+  right: 30px;
+  margin: 35px 60px 0 0;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.hamburger-menu span {
+  height: 3px;
+  width: 30px;
+  margin: 4px;
+  background: black;
+  /* background: $text; */
+}
+
 .logo {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  margin-top: 40px;
 }
 
 /* SVG shape dection divider */

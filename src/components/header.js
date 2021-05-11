@@ -13,16 +13,7 @@ const Header = ({ siteTitle, setMenuState, menuState }) => {
   return (
     <header>
       <nav>
-        <div className="container">
-          <div className="logo">
-            <h2>
-              {" "}
-              <Link className="clr-red no-decor-link" to="/">
-                {siteTitle}
-              </Link>
-            </h2>
-          </div>
-          {/* <div className="menu"> */}
+        <div className="menu-wrapper">
           <div
             onClick={() => setMenuState(!menuState)}
             className="hamburger-menu"
@@ -31,7 +22,14 @@ const Header = ({ siteTitle, setMenuState, menuState }) => {
             <span></span>
             <span></span>
           </div>
-          {/* </div> */}
+        </div>
+        <div className="logo">
+          <h2>
+            {" "}
+            <Link className="clr-red no-decor-link" to="/">
+              {siteTitle}
+            </Link>
+          </h2>
         </div>
       </nav>
     </header>
