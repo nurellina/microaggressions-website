@@ -6,6 +6,7 @@ import { useLocation } from "@reach/router"
 
 const Header = ({ siteTitle, setMenuState, menuState }) => {
   const location = useLocation()
+
   useEffect(() => {
     setMenuState(false)
   }, [location])
@@ -13,7 +14,7 @@ const Header = ({ siteTitle, setMenuState, menuState }) => {
   return (
     <header>
       <nav>
-        <div className="menu-wrapper">
+        <div className="menu-wrapper sticky">
           <div
             onClick={() => setMenuState(!menuState)}
             className="hamburger-menu"
