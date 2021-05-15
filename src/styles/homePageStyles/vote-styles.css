@@ -2,28 +2,38 @@
 
 .feel-you {
   margin-left: 4rem;
+  margin-top: 2rem;
 }
 .fill-shape {
   fill: var(--clr-neutral-100);
 }
 .shapeImage1 {
-  width: 20em;
+  width: 10em;
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 10%;
 }
 .no {
   left: 40%;
-  top: 73%;
+  top: 71%;
 }
 @media only screen and (min-width: 961px) {
   .vote .split {
     flex-direction: row-reverse;
   }
-
+  .shapeImage1 {
+    width: 20em;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+  }
   .feel-you {
     margin-top: 20rem;
     margin-left: 10rem;
+  }
+  .no {
+    left: 40%;
+    top: 75%;
   }
   .question-to-you > * {
     width: 40em;
