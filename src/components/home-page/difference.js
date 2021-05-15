@@ -19,7 +19,7 @@ function FadeInWhenVisible({ children }) {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 1.2 }}
+      transition={{ duration: 0.5 }}
       variants={{
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0 },
@@ -59,7 +59,7 @@ const Difference = () => {
           </p>
           <FadeInWhenVisible>
             <div className="grid">
-              <span className="word1">casually</span>
+              <span className="word1"> casually</span>
 
               <span className="word2"> frequently</span>
               <span className="word3"> without any harm intended </span>

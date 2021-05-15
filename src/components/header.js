@@ -14,7 +14,7 @@ const Header = ({ siteTitle, setMenuState, menuState }) => {
   return (
     <header>
       <nav>
-        <div className="menu-wrapper sticky">
+        <div className="menu-wrapper">
           <div
             onClick={() => setMenuState(!menuState)}
             className="hamburger-menu"
