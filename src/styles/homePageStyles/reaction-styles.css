@@ -10,28 +10,40 @@
 
 /*flexbox with two equal sized columns */
 .split-r {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
   column-gap: 10px;
 }
-
+@media only screen and (min-width: 961px) {
+  .split-r {
+    column-gap: 100px;
+    margin-top: -150px;
+  }
+}
 .column-r {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
   align-items: center;
 }
 .shape2 {
-  width: 8em;
-  height: 4em;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 961px) {
+  .shape2 {
+    height: 250px;
+  }
 }
 
 @media only screen and (min-width: 961px) {
-  .shape2 {
-    width: 10em;
-    height: 5em;
+  .shapeQuestion {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .align-center {
+    margin: 50px auto;
   }
 }

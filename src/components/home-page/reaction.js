@@ -27,22 +27,18 @@ const Reaction = () => {
             that person
           </p>
           <div>
-            <img src={question} alt="question shard" className=" shapeImage" />
+            <img
+              src={question}
+              alt="question shard"
+              className=" shapeImage shapeQuestion"
+            />
           </div>
+
           <div className="split-r">
             <div className="column-r">
               <div className="shape2">
                 <img src={no} alt="no shard" className=" shapeImage" />
               </div>
-            </div>
-            <div className="column-r">
-              <div className="shape2">
-                <img src={yes} alt="yes shard" className=" shapeImage" />
-              </div>
-            </div>
-          </div>
-          <div className="split-r">
-            <div className="column-r">
               <p>
                 {" "}
                 <br />A lot of times people get into arguments with people they
@@ -51,6 +47,9 @@ const Reaction = () => {
               </p>
             </div>
             <div className="column-r">
+              <div className="shape2">
+                <img src={yes} alt="yes shard" className=" shapeImage" />
+              </div>
               <p>
                 {" "}
                 <br />
@@ -65,7 +64,7 @@ const Reaction = () => {
               </p>
             </div>
           </div>
-          <p className="ff-accent allign-hcenter">
+          <p className="ff-accent align-center">
             {" "}
             Or maybe offer to give them something they could read - that could
             be more helpful or effective than a conversation that might just
