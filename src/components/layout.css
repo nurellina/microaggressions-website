@@ -173,13 +173,19 @@ img {
 }
 
 .hamburger-menu {
-  right: 30px;
-  margin: 35px 60px 0 0;
+  margin: 15px 20px 0 0;
   cursor: pointer;
   display: inline-flex;
   flex-direction: column;
   align-self: flex-end;
 }
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .hamburger-menu {
+    right: 30px;
+    margin: 35px 60px 0 0;
+  }
+}
+
 .hamburger-menu span {
   height: 3px;
   width: 30px;
