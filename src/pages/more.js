@@ -5,7 +5,7 @@ import "../styles/more-styles.css"
 
 const MorePage = () => (
   <Layout>
-    <SEO title="Learn more about microagressions" />
+    <SEO title="Learn more about microaggressions" />
     <body>
       <section>{/* Here goes your code */}</section>
     </body>

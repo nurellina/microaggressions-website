@@ -1,4 +1,4 @@
-/* SECTION: what are microagression? */
+/* SECTION: what are microaggression? */
 
 import React from "react"
 import "../../styles/homePageStyles/definition-styles.css"
@@ -12,55 +12,54 @@ const Definition = () => {
     <div>
       <article>
         <div className="definition">
-        <div>
+          <div>
             <div className="def1 shapeTextWrapper">
-            <img src={headingBox} alt="black background" className="shapeImage shapeImgTop"/>
+              <img
+                src={headingBox}
+                alt="black background"
+                className="shapeImage shapeImgTop"
+              />
               <h1 className="salmon-heading clr-red  heading">
                 {" "}
-                But, what are microagressions?{" "}
+                But, what are microaggressions?{" "}
               </h1>
               <p className="clr-white shapeText2" id="shapeTextTop">
                 {" "}
-                A microaggression is a comment
-                or gesture (whether made intentionally or not)
-                that feeds into stereotypes or
-                negative assumptions created around oppressed 
-                or marginalized groups of people.
+                A microaggression is a comment or gesture (whether made
+                intentionally or not) that feeds into stereotypes or negative
+                assumptions created around oppressed or marginalized groups of
+                people.
               </p>
             </div>
           </div>
-          <div>
-
-          </div>
+          <div></div>
           <div className="def2 shapeTextWrapper">
-              <p className="clr-white shapeText2" id="longTxt">
-                It can also be defined as the everyday, subtle, intentional — and
-                oftentimes unintentional — interactions or behaviors that
-                communicate some sort of bias toward historically marginalized
-                groups.
-              </p>
+            <p className="clr-white shapeText2" id="longTxt">
+              It can also be defined as the everyday, subtle, intentional — and
+              oftentimes unintentional — interactions or behaviors that
+              communicate some sort of bias toward historically marginalized
+              groups.
+            </p>
           </div>
-          <div className = "def3">
-            <img src={term_chester} alt="shard"/>
-          
+          <div className="def3">
+            <img src={term_chester} alt="shard" />
           </div>
-          <div className = "def3_1">
-            <img src={illust_def} alt="illustration"/>
+          <div className="def3_1">
+            <img src={illust_def} alt="illustration" />
           </div>
           <div className="def4 shapeTextWrapper">
-            <img src={paragraphBox2} alt="black shard" className="shapeImage"/>
-              <p className="clr-white shapeText2 finalTxt">
-                Originally applied to describe insults against Black Americans and
-                women. Later became largely accepted as a way for people to talk
-                about a wide range of issues related to discrimination, offense,
-                and exclusion against any marginalized group.
-              </p>
+            <img src={paragraphBox2} alt="black shard" className="shapeImage" />
+            <p className="clr-white shapeText2 finalTxt">
+              Originally applied to describe insults against Black Americans and
+              women. Later became largely accepted as a way for people to talk
+              about a wide range of issues related to discrimination, offense,
+              and exclusion against any marginalized group.
+            </p>
           </div>
           <div className="def5">
-            <img src={shard_bottom} alt="shard shape"/>
+            <img src={shard_bottom} alt="shard shape" />
           </div>
-          <div className="space">
-          </div>
+          <div className="space"></div>
         </div>
       </article>
     </div>

@@ -102,7 +102,7 @@ const Examples = () => {
           className="shard ex__shard10"
         />
         <div className="container">
-          <h1 className="clr-red"> Examples of microagressions </h1>
+          <h1 className="clr-red"> Examples of microaggressions </h1>
           <p>
             {" "}
             Prof. Derald W. Sue demonstrates an example of microaggressions

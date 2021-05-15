@@ -1,4 +1,4 @@
-/* SECTION: what harm do microagressions cause? */
+/* SECTION: what harm do microaggressions cause? */
 import React from "react"
 import "../../styles/homePageStyles/harm-styles.css"
 

@@ -14,7 +14,7 @@ const Reaction = () => {
         <div className="container">
           <h1 className="clr-red">
             {" "}
-            How can people who are affected by microagressions react?{" "}
+            How can people who are affected by microaggressions react?{" "}
           </h1>
           <p>
             {" "}
@@ -27,17 +27,17 @@ const Reaction = () => {
             that person
           </p>
           <div>
-              <img src={question} alt="question shard" className=" shapeImage"/>
+            <img src={question} alt="question shard" className=" shapeImage" />
           </div>
           <div className="split-r">
             <div className="column-r">
               <div className="shape2">
-              <img src={no} alt="no shard" className=" shapeImage"/>
+                <img src={no} alt="no shard" className=" shapeImage" />
               </div>
             </div>
             <div className="column-r">
               <div className="shape2">
-              <img src={yes} alt="yes shard" className=" shapeImage"/>
+                <img src={yes} alt="yes shard" className=" shapeImage" />
               </div>
             </div>
           </div>

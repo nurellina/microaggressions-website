@@ -1,4 +1,4 @@
-/* SECTION: how can microagressions be disarmed? */
+/* SECTION: how can microaggressions be disarmed? */
 import React from "react"
 import "../../styles/homePageStyles/disarmed-styles.css"
 import disarm1 from "../../images/disarm1.png"
@@ -12,7 +12,7 @@ const Disarmed = () => {
     <div>
       <article className="disarmed">
         <div className="container">
-          <h1 className="clr-red">How can microagressions be disarmed</h1>
+          <h1 className="clr-red">How can microaggressions be disarmed</h1>
           <p className="ff-accent clr-purple"> THE PROBLEM: </p>
           <p>
             Calling someone out by pointing to the underlying homophobia, racism
