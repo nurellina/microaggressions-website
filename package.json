@@ -28,6 +28,7 @@
     "react-intersection-observer": "^8.31.0",
     "react-is": "^17.0.2",
     "react-player": "^2.8.2",
+    "react-reveal": "^1.2.2",
     "styled-components": "^5.2.1",
     "three": "^0.124.0"
   },
