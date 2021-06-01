@@ -8,6 +8,7 @@
   fill: var(--clr-neutral-100);
 }
 .shapeImage1 {
+  cursor: pointer;
   width: 10em;
   position: absolute;
   top: 60%;
@@ -17,6 +18,27 @@
   left: 40%;
   top: 71%;
 }
+.hoverShake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(2px, 0, 0);
+  }
+}
+
 @media only screen and (min-width: 961px) {
   .vote .split {
     flex-direction: row-reverse;
@@ -26,6 +48,11 @@
     position: absolute;
     top: 55%;
     left: 10%;
+  }
+  .shapeImage1:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
   }
   .feel-you {
     margin-top: 20rem;

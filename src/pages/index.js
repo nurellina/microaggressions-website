@@ -16,7 +16,7 @@ import ShowPhrases from "../components/show-phrases"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ShowPhrases />
+    {/* <ShowPhrases /> */}
     <Vote />
     <Definition />
     <Examples />
