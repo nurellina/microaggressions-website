@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect} from "react"
 import { motion } from "framer-motion"
 import "../../styles/homePageStyles/examples-styles.css"
 import shard1 from "../../images/shard1.png"
@@ -27,6 +27,12 @@ const Examples = () => {
     active: { visibility: "visible" },
     disabled: { visibility: "hidden" },
   }
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+   window.addEventListener("scroll", () => {
+     setScroll(window.scrollY > 1000);
+   });
+  }, []);
 
   return (
     <div>
@@ -39,11 +45,11 @@ const Examples = () => {
           src={shard1}
         />
         <motion.img
+          className="shard ex__shard2"
           animate={active2 ? "active" : "disabled"}
           variants={variants}
           onClick={() => setActive2(!active2)}
           src={shard2}
-          className="shard ex__shard2"
         />
         <motion.img
           animate={active3 ? "active" : "disabled"}
@@ -88,18 +94,18 @@ const Examples = () => {
           className="shard ex__shard8"
         />
         <motion.img
+        className={scroll ? "shard ex__shard9 shake" : "shard ex__shard9"}
           animate={active9 ? "active" : "disabled"}
           variants={variants}
           onClick={() => setActive9(!active9)}
           src={shard9}
-          className="shard ex__shard9"
         />
         <motion.img
+          className="shard ex__shard10"
           animate={active10 ? "active" : "disabled"}
           variants={variants}
           onClick={() => setActive10(!active10)}
           src={shard10}
-          className="shard ex__shard10"
         />
         <div className="container">
           <h1 className="clr-red"> Examples of microaggressions </h1>
