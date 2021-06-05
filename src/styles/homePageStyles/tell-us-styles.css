@@ -16,12 +16,21 @@
     height: 90vh;
   }
 } */
+.center-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center-block h2 {
+  display: flex;
+}
 .create-phrase {
   text-align: center;
 }
 .input-group {
-  display: block;
-  width: 90%;
+  display: flex;
+  width: 530px;
   height: 4rem;
   border: 0;
   background-color: #ffffff;

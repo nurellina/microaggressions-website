@@ -12,10 +12,12 @@ const TellUs = () => {
             {" "}
             Wait, has this ever happened to you as well?
           </h1>
-          <h2>
-            What is the most important sentence/act that comes to your mind?
-          </h2>
-          <CreatePhrase />
+          <div className="center-block">
+            <h2>
+              What is the most important sentence/act that comes to your mind?
+            </h2>
+            <CreatePhrase />
+          </div>
         </div>
         <div className="divider">
           <svg
