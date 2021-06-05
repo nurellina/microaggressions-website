@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    // title: `MicroProject about MicroAggressions`,
     title: `remnants: kind acts of cruelty`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `An educative website that raises awareness of the topic of microaggressions. `,
+    author: `Safe Space Studio`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,7 +39,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images//interviews-imgs/02-3_character-portrait-round.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
