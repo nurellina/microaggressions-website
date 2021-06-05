@@ -5,7 +5,7 @@
   remnants: kind acts of cruetly 
 </h1>
 
-kindactsofcruelty.com is an educational webiste about microaggressions, helping to understand why certain phrases might be problematic, what effects microaggressions cause, and how to act when they happen.
+kindactsofcruelty.com is an educational website about microaggressions, helping to understand why certain phrases might be problematic, what effects microaggressions cause, and how to act when they happen.
 
 In times that are determined by turbulence, racial unrests, uprisings, and emergent movements that are striving for equality and the abolishment of racial injustice, we have to create a space of understanding where those who are marginalized not only have a voice, but are also heard by those in the position of power. The initial step for this space to be created is tied with the creation of awareness, which means that those with privilege need to understand the trauma that results from racism and that BIPoC are going through on a daily basis. 
 
