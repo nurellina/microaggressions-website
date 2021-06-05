@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         setMenuState={setMenuState}
         // menuState={menuState}
         siteTitle={
-          data.site.siteMetadata?.title || `MicroProject about MicroAggressions`
+          data.site.siteMetadata?.title || `remnants: kind acts of cruelty`
         }
       />
 
